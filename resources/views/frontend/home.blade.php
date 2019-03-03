@@ -5,7 +5,8 @@ home
 @endsection
 
 @section('content')
-  <div class="container">
+  <div id="app" class="container">
     <h1 class="text-center">content</h1>
+    <custom-carousel/> 
   </div>
 @endsection

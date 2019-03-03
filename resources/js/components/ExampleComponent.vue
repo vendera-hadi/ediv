@@ -1,23 +1,21 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <carousel :scrollPerPage="true" :perPage="1" :autoplay="true">
+    <slide>
+      Slide 1 Content
+    </slide>
+    <slide>
+      Slide 2 Content
+    </slide>
+  </carousel>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+import { Carousel, Slide } from 'vue-carousel';
+
+export default {
+  components: {
+    Carousel,
+    Slide
+  }
+};
 </script>
