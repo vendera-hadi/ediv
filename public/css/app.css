@@ -10692,6 +10692,42 @@ input[type=number]:focus,
   background-color: #f0e6da;
 }
 
+#product {
+  margin-top: 8rem !important;
+}
+
+#animate-desc {
+  margin-top: 4rem !important;
+  background-color: #fffaf4;
+}
+
+.why-container {
+  padding-top: 8rem;
+}
+
+.why-1 {
+  background-image: url(/images/why-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.why-2 {
+  background-image: url(/images/why-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.VueCarousel-dot-container {
+  position: absolute;
+  display: grid !important;
+  top: 0;
+  right: -30px;
+}
+
+.VueCarousel-dot--active {
+  background-color: #a19362 !important;
+}
+
 @media (max-width: 575.98px) {
   #sitemap {
     display: none !important;
