@@ -78,6 +78,12 @@ input[type=number]:focus,
   border-radius: 0;
 }
 
+.contact-product-img {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+
 .contact-box {
   background-image:url(/images/contact-bg.jpg);
   background-repeat: no-repeat;
@@ -135,5 +141,23 @@ input[type=number]:focus,
 @include media-breakpoint-down(xs) {
   #sitemap {
     display: none !important;
+  }
+
+  .contact-box {
+    background: none;
+
+    .row{
+      margin-top: 0;
+    }
+  }
+
+  .contact-product-img {
+    position: absolute;
+    bottom: 62px;
+    z-index: 100;
+
+    img {
+      width: 400px;
+    }
   }
 }

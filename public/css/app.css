@@ -13771,6 +13771,12 @@ input[type=number]:focus,
   border-radius: 0;
 }
 
+.contact-product-img {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+
 .contact-box {
   background-image: url(/images/contact-bg.jpg);
   background-repeat: no-repeat;
@@ -13826,6 +13832,24 @@ input[type=number]:focus,
 @media (max-width: 575.98px) {
   #sitemap {
     display: none !important;
+  }
+
+  .contact-box {
+    background: none;
+  }
+
+  .contact-box .row {
+    margin-top: 0;
+  }
+
+  .contact-product-img {
+    position: absolute;
+    bottom: 62px;
+    z-index: 100;
+  }
+
+  .contact-product-img img {
+    width: 400px;
   }
 }
 

@@ -48,6 +48,9 @@
               </tr>
             </table>
           </div>
+          <div class="contact-product-img">
+            <img src="{{asset('images/contact-product.png')}}" width="487" alt="">
+          </div>
         </div>
         <!-- contact box -->
       </div>
