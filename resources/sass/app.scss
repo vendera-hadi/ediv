@@ -1,6 +1,8 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import "node_modules/font-awesome/scss/font-awesome.scss";
 
 // Variables
 @import 'variables';
@@ -28,17 +30,64 @@ input[type=number]:focus,
   box-shadow: inset 0 -1px 0 #ddd;
 }
 
-.text-brown {
-  color: #61574a;
+.text{
+  &-brown {
+    color: #61574a;
+  }
+
+  &-gray {
+    color: gray;
+  }
+
+  &-custom {
+    font-family: 'Satisfy', cursive;
+  }
 }
 
 .border-brown {
   border: 2px solid #61574a;
 }
 
-.btn-brown {
-  background-color: #61574a;
-  color: #fff;
+.btn {
+  &-brown {
+    background-color: #61574a;
+    color: #fff;
+  }
+  &-pink {
+    background-color: #fad9e2;
+  }
+}
+
+.bg{
+    &-pink{
+      background-color: #fad9e2;
+    }
+
+    &-white{
+      background-color: #fff;
+    }
+}
+
+.contact-box-shadow {
+  box-shadow: 20px 10px 40px #888;
+}
+
+.contact-textbox {
+  border: none;
+  border-bottom: 2px #fad9e2 solid;
+  border-radius: 0;
+}
+
+.contact-box {
+  background-image:url(/images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 10px #fff;
+
+  .row{
+    margin-top: 218px;
+    margin-bottom: 120px;
+  }
 }
 
 .footer-box {

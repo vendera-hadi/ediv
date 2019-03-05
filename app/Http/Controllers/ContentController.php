@@ -16,4 +16,9 @@ class ContentController extends Controller
         return view('frontend.home', $data);
     }
 
+    public function contact()
+    {
+        return view('frontend.contact', []);
+    }
+
 }

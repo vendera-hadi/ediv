@@ -1,9 +1,5 @@
 @extends('frontend.layout.main')
 
-@section('state')
-home
-@endsection
-
 @section('content')
   <div id="app">
     <section id="slider" class="container">
@@ -17,7 +13,7 @@ home
     <section id="product" class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-sm-6">
-          <img src="{{asset('images/ediva_pure.png')}}" class="img-fluid" alt="">
+          <img src="{{asset('images/ediva_pure.jpg')}}" class="img-fluid" alt="">
         </div>
         <div class="col-sm-1"></div>
         <div class="col-sm-4">

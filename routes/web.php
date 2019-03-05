@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'ContentController@home')->name('home');
+Route::get('/contact-us', 'ContentController@contact')->name('contact');

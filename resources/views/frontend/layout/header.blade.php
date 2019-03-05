@@ -11,8 +11,8 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto ml-5">
-            <li class="px-3 nav-item active">
-              <a class="nav-link" href="#">Home</a>
+            <li class="px-3 nav-item {{Route::currentRouteName() == 'home' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('home')}}">Home</a>
             </li>
             <li class="px-3 nav-item">
               <a class="nav-link" href="#">Product</a>
@@ -26,8 +26,8 @@
             <li class="px-3 nav-item">
               <a class="nav-link" href="#">News & Event</a>
             </li>
-            <li class="px-3 nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+            <li class="px-3 nav-item {{Route::currentRouteName() == 'contact' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
             </li>
           </ul>
         </div>
