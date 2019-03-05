@@ -11,22 +11,25 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto ml-5">
-            <li class="px-3 nav-item {{Route::currentRouteName() == 'home' ? 'active' : ''}}">
+            <li class="px-2 nav-item {{Route::currentRouteName() == 'home' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('home')}}">Home</a>
             </li>
-            <li class="px-3 nav-item">
+            <li class="px-2 nav-item">
               <a class="nav-link" href="#">Product</a>
             </li>
-            <li class="px-3 nav-item">
+            <li class="px-2 nav-item">
               <a class="nav-link" href="#">Article</a>
             </li>
-            <li class="px-3 nav-item">
+            <li class="px-2 nav-item">
               <a class="nav-link" href="#">PT Meiji Indonesia</a>
             </li>
-            <li class="px-3 nav-item">
+            <li class="px-2 nav-item">
               <a class="nav-link" href="#">News & Event</a>
             </li>
-            <li class="px-3 nav-item {{Route::currentRouteName() == 'contact' ? 'active' : ''}}">
+            <li class="px-2 nav-item {{Route::currentRouteName() == 'faq' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('faq')}}">FAQ</a>
+            </li>
+            <li class="px-2 nav-item {{Route::currentRouteName() == 'contact' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
             </li>
           </ul>

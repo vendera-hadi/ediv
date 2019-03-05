@@ -21,4 +21,9 @@ class ContentController extends Controller
         return view('frontend.contact', []);
     }
 
+    public function faq()
+    {
+        return view('frontend.faq', []);
+    }
+
 }

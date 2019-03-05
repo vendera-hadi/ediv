@@ -13829,6 +13829,24 @@ input[type=number]:focus,
   background-color: #a19362 !important;
 }
 
+.faq-decor-left {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+}
+
+.faq-decor-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.faq-decor-right2 {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+}
+
 @media (max-width: 575.98px) {
   #sitemap {
     display: none !important;

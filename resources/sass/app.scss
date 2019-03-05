@@ -138,6 +138,26 @@ input[type=number]:focus,
   background-color: #a19362 !important;
 }
 
+.faq-decor {
+  &-left {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+  }
+
+  &-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &-right2 {
+    position: absolute;
+    right: 0;
+    bottom: 2%;
+  }
+}
+
 @include media-breakpoint-down(xs) {
   #sitemap {
     display: none !important;
