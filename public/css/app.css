@@ -13847,6 +13847,27 @@ input[type=number]:focus,
   bottom: 2%;
 }
 
+.faq-decor-bg {
+  background-image: url(/images/faq-bg.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+#accordion .card {
+  border: none;
+  border-radius: 1rem;
+}
+
+#accordion .card .card-header {
+  border-bottom: none;
+}
+
+#accordion .card .btn-link {
+  text-decoration: none;
+  color: gray;
+  font-weight: bolder;
+}
+
 @media (max-width: 575.98px) {
   #sitemap {
     display: none !important;

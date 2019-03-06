@@ -156,6 +156,28 @@ input[type=number]:focus,
     right: 0;
     bottom: 2%;
   }
+
+  &-bg {
+    background-image:url(/images/faq-bg.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
+#accordion {
+  .card {
+    border: none;
+    border-radius: 1rem;
+
+    .card-header {
+      border-bottom: none;
+    }
+    .btn-link {
+      text-decoration: none;
+      color: gray;
+      font-weight: bolder;
+    }
+  }
 }
 
 @include media-breakpoint-down(xs) {

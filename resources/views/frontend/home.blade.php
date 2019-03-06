@@ -1,5 +1,9 @@
 @extends('frontend.layout.main')
 
+@section('title')
+Home
+@endsection
+
 @section('content')
   <div id="app">
     <section id="slider" class="container">
