@@ -13860,6 +13860,15 @@ input[type=number]:focus,
   background-size: contain;
 }
 
+.news-bg {
+  background: url(/images/news-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.news-header-title {
+  font-size: 55px;
+}
+
 .company-box {
   background: #f8f3e9;
   min-height: 442px;
@@ -13945,6 +13954,14 @@ input[type=number]:focus,
   }
 
   .slider-overlay {
+    display: none;
+  }
+
+  .company-leaf-left {
+    display: none;
+  }
+
+  .company-leaf-right {
     display: none;
   }
 }

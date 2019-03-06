@@ -35,4 +35,9 @@ class ContentController extends Controller
         return view('frontend.company', $data);
     }
 
+    public function news()
+    {
+        return view('frontend.news', []);
+    }
+
 }

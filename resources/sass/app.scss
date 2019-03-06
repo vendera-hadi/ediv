@@ -173,6 +173,17 @@ input[type=number]:focus,
   }
 }
 
+.news {
+  &-bg {
+    background:url(/images/news-bg.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &-header-title {
+    font-size: 55px;
+  }
+}
+
 .company {
   &-box {
      background: #f8f3e9;
@@ -265,6 +276,15 @@ input[type=number]:focus,
 
   .slider-overlay {
     display: none;
+  }
+
+  .company{
+    &-leaf-left{
+      display: none;
+    }
+    &-leaf-right{
+      display: none;
+    }
   }
 
 }

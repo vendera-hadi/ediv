@@ -23,8 +23,8 @@
             <li class="px-2 nav-item {{Route::currentRouteName() == 'company' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('company')}}">PT Meiji Indonesia</a>
             </li>
-            <li class="px-2 nav-item">
-              <a class="nav-link" href="#">News & Event</a>
+            <li class="px-2 nav-item {{Route::currentRouteName() == 'news-event' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('news-event')}}">News & Event</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'faq' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('faq')}}">FAQ</a>
