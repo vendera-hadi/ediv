@@ -20,8 +20,8 @@
             <li class="px-2 nav-item">
               <a class="nav-link" href="#">Article</a>
             </li>
-            <li class="px-2 nav-item">
-              <a class="nav-link" href="#">PT Meiji Indonesia</a>
+            <li class="px-2 nav-item {{Route::currentRouteName() == 'company' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('company')}}">PT Meiji Indonesia</a>
             </li>
             <li class="px-2 nav-item">
               <a class="nav-link" href="#">News & Event</a>

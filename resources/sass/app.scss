@@ -127,15 +127,24 @@ input[type=number]:focus,
   }
 }
 
-.VueCarousel-dot-container {
-  position: absolute;
-  display: grid !important;
-  top: 0;
-  right: -30px;
+#slider{
+  .VueCarousel-dot-container {
+    position: absolute;
+    display: grid !important;
+    top: 0;
+    right: -30px;
+  }
 }
 
 .VueCarousel-dot--active {
   background-color: #a19362 !important;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 24%;
+  left: 10%;
+  width: 50%;
 }
 
 .faq-decor {
@@ -161,6 +170,43 @@ input[type=number]:focus,
     background-image:url(/images/faq-bg.png);
     background-repeat: repeat-x;
     background-size: contain;
+  }
+}
+
+.company {
+  &-box {
+     background: #f8f3e9;
+     min-height: 442px;
+
+     .content {
+       z-index: 2;
+       position: relative;
+     }
+  }
+
+  &-bg {
+    background-image:url(/images/company-bg.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
+  &-leaf{
+    &-right {
+      position: absolute;
+      top: 30%;
+      right: 4%;
+    }
+    &-left {
+      position: absolute;
+      bottom: 10%;
+      left: 4%;
+    }
+  }
+
+  &-flower-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -202,4 +248,23 @@ input[type=number]:focus,
       width: 400px;
     }
   }
+
+  .faq-decor {
+    &-left {
+      display: none;
+    }
+
+    &-right {
+      display: none;
+    }
+
+    &-right2 {
+      display: none;
+    }
+  }
+
+  .slider-overlay {
+    display: none;
+  }
+
 }

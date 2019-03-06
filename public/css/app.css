@@ -13818,7 +13818,7 @@ input[type=number]:focus,
   background-size: contain;
 }
 
-.VueCarousel-dot-container {
+#slider .VueCarousel-dot-container {
   position: absolute;
   display: grid !important;
   top: 0;
@@ -13827,6 +13827,13 @@ input[type=number]:focus,
 
 .VueCarousel-dot--active {
   background-color: #a19362 !important;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 24%;
+  left: 10%;
+  width: 50%;
 }
 
 .faq-decor-left {
@@ -13851,6 +13858,40 @@ input[type=number]:focus,
   background-image: url(/images/faq-bg.png);
   background-repeat: repeat-x;
   background-size: contain;
+}
+
+.company-box {
+  background: #f8f3e9;
+  min-height: 442px;
+}
+
+.company-box .content {
+  z-index: 2;
+  position: relative;
+}
+
+.company-bg {
+  background-image: url(/images/company-bg.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.company-leaf-right {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+}
+
+.company-leaf-left {
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+}
+
+.company-flower-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #accordion .card {
@@ -13889,6 +13930,22 @@ input[type=number]:focus,
 
   .contact-product-img img {
     width: 400px;
+  }
+
+  .faq-decor-left {
+    display: none;
+  }
+
+  .faq-decor-right {
+    display: none;
+  }
+
+  .faq-decor-right2 {
+    display: none;
+  }
+
+  .slider-overlay {
+    display: none;
   }
 }
 

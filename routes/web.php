@@ -14,3 +14,4 @@
 Route::get('/', 'ContentController@home')->name('home');
 Route::get('/contact-us', 'ContentController@contact')->name('contact');
 Route::get('/faq', 'ContentController@faq')->name('faq');
+Route::get('/pt-meiji-indonesia', 'ContentController@company')->name('company');

@@ -1773,6 +1773,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['images'],
@@ -36857,7 +36861,15 @@ var render = function() {
         _c("img", {
           staticClass: "img-fluid",
           attrs: { src: image.path, title: image.title, alt: image.title }
-        })
+        }),
+        _vm._v(" "),
+        image.title
+          ? _c("div", { staticClass: "slider-overlay text-left text-white" }, [
+              _c("h2", [_vm._v(_vm._s(image.title))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(image.description))])
+            ])
+          : _vm._e()
       ])
     }),
     1
