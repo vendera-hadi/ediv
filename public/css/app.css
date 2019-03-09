@@ -14105,6 +14105,10 @@ input[type=number]:focus,
   background-size: auto;
 }
 
+#product-top-mobile {
+  display: none;
+}
+
 #product-middle {
   position: relative;
   min-height: 520px;
@@ -14112,6 +14116,10 @@ input[type=number]:focus,
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+#product-middle-mobile {
+  display: none;
 }
 
 #product-bottom {
@@ -14122,6 +14130,10 @@ input[type=number]:focus,
 
 #product-bottom h1 {
   z-index: 10;
+}
+
+#product-bottom-mobile {
+  display: none;
 }
 
 .obj-top-1 {
@@ -14402,6 +14414,30 @@ input[type=number]:focus,
   #article-list .article-box-even {
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
+  }
+
+  #product-top {
+    display: none;
+  }
+
+  #product-top-mobile {
+    display: block;
+  }
+
+  #product-middle {
+    display: none;
+  }
+
+  #product-middle-mobile {
+    display: block;
+  }
+
+  #product-bottom {
+    display: none;
+  }
+
+  #product-bottom-mobile {
+    display: block;
   }
 }
 

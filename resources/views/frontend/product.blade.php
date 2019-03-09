@@ -34,6 +34,23 @@ Product
     </div>
   </section>
 
+  <section id="product-top-mobile" class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="text-custom text-gray text-center news-header-title my-3">Ediva Pure</h1>
+        <img src="{{asset('images/ediva_pure.png')}}" title="Meiji Ediva Pure" width="650" class="img-fluid my-3" alt="">
+      </div>
+      <div class="col-sm-12 my-3">
+        <center><img src="{{asset('images/pure-obj-1.png')}}" width="150" title="meringankan pre-menstruasi" class="img-fluid my-3" alt="ediva pure"></center>
+        <h4 class="text-center my-3">Meringankan Gejala Pre-Menstruasi</h4>
+      </div>
+      <div class="col-sm-12 my-3r">
+        <center><img src="{{asset('images/pure-obj-2.png')}}" width="150" title="meningkatkan kekebalan tubuh" class="img-fluid my-3" alt="ediva pure"></center>
+        <h4 class="text-center my-3">Meningkatkan Sistem Kekebalan Tubuh</h4>
+      </div>
+    </div>
+  </section>
+
   <section id="product-middle" class="container-fluid">
     <div class="row d-flex justify-content-between">
       <!-- left -->
@@ -53,13 +70,30 @@ Product
       <!-- right -->
       <div class="col-sm-6">
         <div class="obj-middle-1 mt-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="500">
-          <img src="{{asset('images/ediva_young.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid" alt="">
+          <img src="{{asset('images/ediva_young.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
         </div>
         <div class="obj-middle-2" data-aos="fade-down-left" data-aos-delay="1000">
-          <img src="{{asset('images/product-obj-2.png')}}" width="165" class="img-fluid" alt="">
+          <img src="{{asset('images/product-obj-2.png')}}" width="165" class="img-fluid my-3" alt="">
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <section id="product-middle-mobile" class="container mt-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="text-custom text-gray text-center news-header-title my-3">Ediva Young</h1>
+        <img src="{{asset('images/ediva_young.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
+      </div>
+      <div class="col-sm-12 my-3">
+        <center><img src="{{asset('images/young-obj-1.png')}}" width="150" title="meningkatkan produksi kolagen" class="img-fluid my-3" alt="ediva young"></center>
+        <h4 class="text-center my-3">Meningkatkan Produksi Kolagen Pada Kulit</h4>
+      </div>
+      <div class="col-sm-12 my-3r">
+        <center><img src="{{asset('images/young-obj-2.png')}}" width="88" title="membuat kulit menjadi lebih sehat dan elastis" class="img-fluid my-3" alt="ediva young"></center>
+        <h4 class="text-center my-3">Membuat Kulit Menjadi Lebih Sehat dan Elastis</h4>
+      </div>
     </div>
   </section>
 
@@ -220,6 +254,70 @@ Product
       </div>
     </div>
 
+  </section>
+
+  <section id="product-bottom-mobile" class="container py-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="text-custom text-red text-center news-header-title my-3">Evening Primroses Oil</h1>
+        <img src="{{asset('images/primroses.png')}}" class="img-fluid my-3" width="580" alt="primroses">
+      </div>
+      <div class="col-sm-12 text-center">
+        <h3 class="text-brown font-weight-bold my-3">Omega 6 Fatty Acid</h5>
+        <p>Bermanfaat untuk memaksimalkan proses metabolisme dan membantu mengoptimalkan proses regenerasi kulit dari dalam tubuh</p>
+      </div>
+      <div class="col-sm-12 text-center">
+        <h3 class="text-brown font-weight-bold my-3">Asam Gamma-linolenic</h5>
+        <p>Berperan penting mengatasi masalah radang/inflamasi, terutama pada penyakit kulit</p>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-sm-12">
+        <h1 class="text-custom text-red text-center news-header-title my-3">VIT E</h1>
+        <center><img src="{{asset('images/vit-e.png')}}" class="img-fluid my-3" alt="primroses" width="220"></center>
+      </div>
+      <div class="col-sm-12 text-center">
+        <p class="my-3">Mendorong produksi kolagen yang berfungsi mengurangi jumlah garis halus dan tanda-tanda penuaan.</p>
+      </div>
+      <div class="col-sm-12 text-center">
+        <p class="my-3">Melancarkan sirkulasi darah dan menurunkan indikasi terjadinya sindrom pramenstruasi.</p>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-sm-12">
+        <h1 class="text-custom text-red text-center news-header-title my-3">GAC Fruit</h1>
+        <img src="{{asset('images/gac-fruit.png')}}" class="img-fluid" width="580" alt="primroses">
+      </div>
+      <div class="col-sm-12 text-center">
+        <h3 class="text-brown font-weight-bold my-3">Tinggi Kandungan Betacarotine</h5>
+        <p>Membantu Melancarkan aliran darah dan meminimalisir rasa sakit saat premenstruasi.</p>
+      </div>
+      <div class="col-sm-12 text-center">
+        <h3 class="text-brown font-weight-bold my-3">Lycopene 16 X dari Buah Tomat</h5>
+        <p>Mengandung antioksidan yang melimpah untuk meningkatkan sistem kekebalan tubuh.</p>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-sm-12">
+        <h1 class="text-custom text-red text-center news-header-title my-3">Royal Jelly</h1>
+        <img src="{{asset('images/royal-jelly.png')}}" class="img-fluid" width="580" alt="primroses">
+      </div>
+      <div class="col-sm-12 text-center">
+        <h3 class="text-brown font-weight-bold my-3">Asam Amino</h5>
+        <p>Membentuk antibodi tubuh untuk menjaga tubuh dari zat asing yang masuk ke dalam tubuh.</p>
+      </div>
+      <div class="col-sm-12 text-center">
+        <h3 class="text-brown font-weight-bold my-3">Vitamin B Complex</h5>
+        <p>Mengoptimalkan produksi energi dan mengoptimalkan penyerapan nutrisi.</p>
+      </div>
+      <div class="col-sm-12 text-center">
+        <h3 class="text-brown font-weight-bold my-3">Protein</h5>
+        <p>Berperan meningkatkan sistem imun dan membangun sel, serta jaringan dalam tubuh.</p>
+      </div>
+    </div>
   </section>
 
   <section id="video" class="container-fluid py-5 my-5">
