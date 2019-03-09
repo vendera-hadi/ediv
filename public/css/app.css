@@ -13751,6 +13751,14 @@ input[type=number]:focus,
   color: #f4d6cd;
 }
 
+.text-red {
+  color: #ca6455;
+}
+
+.text-orange {
+  color: #eea82a;
+}
+
 .text-custom {
   font-family: "Satisfy", cursive;
 }
@@ -13816,9 +13824,22 @@ input[type=number]:focus,
   margin-top: 8rem !important;
 }
 
+#product h1 {
+  font-size: 55px;
+}
+
 #animate-desc {
+  position: relative;
   margin-top: 4rem !important;
   background-color: #fffaf4;
+  min-height: 1000px;
+}
+
+#animate-desc h1.text-custom {
+  font-size: 65px;
+  background-image: url(/images/obj-bottom-desc-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .why-container {
@@ -13826,15 +13847,111 @@ input[type=number]:focus,
 }
 
 .why-1 {
-  background-image: url(/images/why-1.png);
+  background-image: url(/images/why-1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  height: 486px;
+  padding-top: 75px;
 }
 
 .why-2 {
-  background-image: url(/images/why-2.png);
+  background-image: url(/images/why-2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  height: 486px;
+  padding-top: 75px;
+}
+
+.home-slider-bg {
+  background-image: url(/images/home-slider-bg.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+  min-height: 520px;
+}
+
+.home-product-container {
+  background-image: url(/images/article-list-box-bg.png);
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.home-jelly-right {
+  background-image: url(/images/jelly-right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 93px;
+  right: 0;
+  width: 300px;
+  height: 530px;
+}
+
+.home-jelly-desc-1 {
+  position: absolute;
+  top: 360px;
+  right: 175px;
+  width: 235px;
+}
+
+.home-jelly-desc-2 {
+  position: absolute;
+  top: 328px;
+  right: 3px;
+  width: 235px;
+}
+
+.home-jelly-desc-3 {
+  position: absolute;
+  top: 528px;
+  right: 91px;
+  width: 142px;
+}
+
+.home-fruit-left {
+  background-image: url(/images/gac-fruit.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 235px;
+  left: 35px;
+  width: 400px;
+  height: 300px;
+  -webkit-transform: rotate(30deg);
+}
+
+.home-fruit-desc-1 {
+  position: absolute;
+  top: 460px;
+  left: 50px;
+  width: 235px;
+}
+
+.home-fruit-desc-2 {
+  position: absolute;
+  top: 328px;
+  left: 429px;
+  width: 235px;
+}
+
+.home-primrose-desc-1 {
+  position: absolute;
+  top: 726px;
+  left: 347px;
+  width: 235px;
+}
+
+.home-primrose-desc-2 {
+  position: absolute;
+  top: 728px;
+  right: 257px;
+  width: 235px;
+}
+
+.home-primrose-desc-3 {
+  position: absolute;
+  top: 728px;
+  right: 257px;
+  width: 235px;
 }
 
 #slider .VueCarousel-dot-container {
