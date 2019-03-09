@@ -30,6 +30,17 @@ input[type=number]:focus,
   box-shadow: inset 0 -1px 0 #ddd;
 }
 
+.fit-image{
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+
+  &-small {
+    height: 210px;
+  }
+}
+
+
 .text{
   &-brown {
     color: #61574a;
@@ -55,6 +66,9 @@ input[type=number]:focus,
   }
   &-pink {
     background-color: #fad9e2;
+  }
+  &-blue {
+    background-color: #7abece;
   }
 }
 
