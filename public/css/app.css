@@ -13828,11 +13828,19 @@ input[type=number]:focus,
   font-size: 55px;
 }
 
+#product-mobile {
+  display: none;
+}
+
 #animate-desc {
   position: relative;
   margin-top: 4rem !important;
   background-color: #fffaf4;
   min-height: 1000px;
+}
+
+#animate-desc-mobile {
+  display: none;
 }
 
 #animate-desc h1.text-custom {
@@ -14416,6 +14424,14 @@ input[type=number]:focus,
     margin-bottom: 3rem !important;
   }
 
+  #product {
+    display: none;
+  }
+
+  #product-mobile {
+    display: block;
+  }
+
   #product-top {
     display: none;
   }
@@ -14438,6 +14454,30 @@ input[type=number]:focus,
 
   #product-bottom-mobile {
     display: block;
+  }
+
+  #animate-desc {
+    display: none;
+  }
+
+  #animate-desc-mobile {
+    display: block;
+  }
+
+  .why-1 {
+    background-size: cover;
+    height: 671px;
+    padding-top: 25px;
+  }
+
+  .why-2 {
+    background-size: cover;
+    height: 671px;
+    padding-top: 25px;
+  }
+
+  .home-slider-bg {
+    min-height: 200px;
   }
 }
 

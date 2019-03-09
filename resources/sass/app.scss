@@ -134,6 +134,9 @@ input[type=number]:focus,
   h1 {
     font-size: 55px;
   }
+  &-mobile {
+    display: none;
+  }
 }
 
 #animate-desc {
@@ -141,6 +144,9 @@ input[type=number]:focus,
   margin-top: 4rem !important;
   background-color: #fffaf4;
   min-height: 1000px;
+  &-mobile {
+    display: none;
+  }
 
   h1.text-custom {
     font-size: 65px;
@@ -683,6 +689,11 @@ input[type=number]:focus,
   }
 
   #product {
+    display: none;
+    &-mobile {
+      display: block;
+    }
+
     &-top {
       display: none;
       &-mobile {
@@ -705,6 +716,31 @@ input[type=number]:focus,
     }
   }
 
+  #animate-desc {
+    display: none;
+    &-mobile {
+      display: block;
+    }
+  }
+
+  .why{
+    &-1 {
+      background-size: cover;
+      height: 671px;
+      padding-top: 25px;
+    }
+    &-2 {
+      background-size: cover;
+      height: 671px;
+      padding-top: 25px;
+    }
+  }
+
+  .home {
+    &-slider-bg {
+      min-height: 200px;
+    }
+  }
 
 
 }
