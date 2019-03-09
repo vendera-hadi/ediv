@@ -2,7 +2,7 @@
   <div class="row d-flex justify-content-center">
     <div class="col-sm-11">
       <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{route('home')}}">
           <img src="{{asset('images/logo.png')}}" title="meiji ediva" width="150" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,8 +14,8 @@
             <li class="px-2 nav-item {{Route::currentRouteName() == 'home' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('home')}}">Home</a>
             </li>
-            <li class="px-2 nav-item">
-              <a class="nav-link" href="#">Product</a>
+            <li class="px-2 nav-item {{Route::currentRouteName() == 'product' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('product')}}">Product</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'article' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('article')}}">Article</a>

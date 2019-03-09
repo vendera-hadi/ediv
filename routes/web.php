@@ -17,3 +17,4 @@ Route::get('/faq', 'ContentController@faq')->name('faq');
 Route::get('/pt-meiji-indonesia', 'ContentController@company')->name('company');
 Route::get('/news-event', 'ContentController@news')->name('news-event');
 Route::get('/article', 'ContentController@article')->name('article');
+Route::get('/product', 'ContentController@product')->name('product');

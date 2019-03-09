@@ -9,6 +9,8 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+// AOS animation
+@import '~aos/dist/aos.css';
 
 .navbar-laravel {
   background-color: #fff;
@@ -48,6 +50,10 @@ input[type=number]:focus,
 
   &-gray {
     color: gray;
+  }
+
+  &-pink {
+    color: #f4d6cd;
   }
 
   &-custom {
@@ -297,6 +303,180 @@ input[type=number]:focus,
     }
   }
 }
+
+#product-top {
+  position: relative;
+  min-height: 520px;
+  background-image:url(/images/obj-top-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#product-middle {
+  position: relative;
+  min-height: 520px;
+  background-image:url(/images/obj-middle-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#product-bottom {
+  position: relative;
+  background-color: #fdfcfa;
+  min-height: 520px;
+
+  h1{
+    z-index: 10;
+  }
+}
+
+.obj{
+  &-top{
+    &-1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-animation: slideTopDown 3s ease forwards;
+    }
+    &-2{
+      position: absolute;
+      top: 197px;
+      left: 10%;
+      -webkit-animation: slideLeftRight 2s ease forwards;
+    }
+    &-bounce{
+      -webkit-animation: jump 1.5s ease 0s 1 normal;
+    }
+    &-appear{
+      -webkit-animation: appear 2s ease 0s 1 normal;
+    }
+    &-desc-bg{
+      background-image:url(/images/obj-top-desc-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &-middle {
+    &-desc-bg{
+      background-image:url(/images/obj-middle-desc-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &-2{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &-bottom {
+    &-title-bg {
+      position: absolute;
+      top: -53px;
+      left: -50px;
+      background-image: url(/images/obj-bottom-desc-bg.png);
+      background-repeat: no-repeat;
+      width: 600px;
+      height: 235px;
+      background-position: center;
+      opacity: 0.5;
+    }
+
+    &-title-bg-2 {
+      position: absolute;
+      top: -53px;
+      right: -118px;
+      background-image: url(/images/obj-bottom-desc-bg-2.png);
+      background-repeat: no-repeat;
+      width: 580px;
+      height: 235px;
+      background-position: center;
+      opacity: 0.5;
+    }
+
+    &-title-bg-4 {
+      position: absolute;
+      top: -53px;
+      right: -38px;
+      background-image: url(/images/obj-bottom-desc-bg-2.png);
+      background-repeat: no-repeat;
+      width: 580px;
+      height: 235px;
+      background-position: center;
+      opacity: 0.5;
+    }
+
+    &-title-2 {
+      font-size: 91px;
+      padding-right: 70px;
+      text-align: right;
+    }
+  }
+
+}
+
+// animation
+@keyframes slideTopDown {
+  from {
+    opacity: 0;
+    top: -200px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes slideLeftRight {
+  from {
+    opacity: 0;
+    left: -25%;
+  }
+  to {
+    opacity: 1;
+    left: 10%;
+  }
+}
+
+@keyframes jump {
+  0%{
+	   transform: translateY(0);
+  }
+  20%{
+	   transform: translateY(0);
+  }
+  40%{
+	   transform: translateY(-30px);
+  }
+  50%{
+	   transform: translateY(0);
+  }
+  60%{
+	   transform: translateY(-15px);
+  }
+  80%{
+	   transform: translateY(0);
+  }
+  100%{
+	   transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes appear {
+  0%{
+	opacity: 0;
+	-webkit-transform: scale3d(0.3, 0.3, 0.3);
+	transform: scale3d(0.3, 0.3, 0.3);
+  }
+  60%{
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+  }
+}
+
 
 @include media-breakpoint-down(xs) {
   #sitemap {

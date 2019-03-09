@@ -7,6 +7,9 @@
 
 require('./bootstrap');
 require('vue-carousel');
+require('aos');
+
+import AOS from 'aos'
 
 window.Vue = require('vue');
 
@@ -31,5 +34,10 @@ Vue.component('my-carousel', require('./components/Carousel.vue').default);
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    created () {
+      AOS.init({
+        duration: 2000,
+      })
+    }
 });

@@ -45,4 +45,9 @@ class ContentController extends Controller
         return view('frontend.article', []);
     }
 
+    public function product()
+    {
+        return view('frontend.product', []);
+    }
+
 }
