@@ -13918,6 +13918,49 @@ input[type=number]:focus,
   right: 0;
 }
 
+#article-list {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+#article-list .article-list-container {
+  background-image: url(/images/article-list-box-bg.png);
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
+#article-list .article-list-box {
+  background: #f5dca3;
+}
+
+#article-list .card {
+  z-index: 10;
+}
+
+#article-list .overlay {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+}
+
+.article-bg {
+  background-image: url(/images/article-bg.png);
+  background-repeat: repeat;
+  background-position: 24% 80%;
+  background-size: cover;
+}
+
+.article-box-odd {
+  margin-top: -3rem !important;
+  margin-bottom: -4rem !important;
+}
+
+.article-box-even {
+  margin-top: 10rem !important;
+  margin-bottom: -3rem !important;
+}
+
 #accordion .card {
   border: none;
   border-radius: 1rem;
@@ -13978,6 +14021,21 @@ input[type=number]:focus,
 
   .company-leaf-right {
     display: none;
+  }
+
+  #article-list {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #article-list .article-box-odd {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  #article-list .article-box-even {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
   }
 }
 

@@ -40,4 +40,9 @@ class ContentController extends Controller
         return view('frontend.news', []);
     }
 
+    public function article()
+    {
+        return view('frontend.article', []);
+    }
+
 }

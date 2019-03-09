@@ -17,8 +17,8 @@
             <li class="px-2 nav-item">
               <a class="nav-link" href="#">Product</a>
             </li>
-            <li class="px-2 nav-item">
-              <a class="nav-link" href="#">Article</a>
+            <li class="px-2 nav-item {{Route::currentRouteName() == 'article' ? 'active' : ''}}">
+              <a class="nav-link" href="{{route('article')}}">Article</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'company' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('company')}}">PT Meiji Indonesia</a>
