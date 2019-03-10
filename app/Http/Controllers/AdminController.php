@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Slider;
+use App\Models\Newsletter;
+use App\Exports\NewsletterExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class AdminController extends Controller
 {
@@ -67,7 +70,13 @@ class AdminController extends Controller
 
     public function newsletter()
     {
-        return view('home');
+        $data['newsletters'] = Newsletter::paginate(20);
+        return view('backend.newsletter', $data);
+    }
+
+    public function newsletter_download()
+    {
+        return Excel::download(new NewsletterExport, 'data.xlsx');
     }
 
     public function news()

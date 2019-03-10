@@ -18,6 +18,7 @@ Route::get('/pt-meiji-indonesia', 'ContentController@company')->name('company');
 Route::get('/news-event', 'ContentController@news')->name('news-event');
 Route::get('/article', 'ContentController@article')->name('article');
 Route::get('/product', 'ContentController@product')->name('product');
+Route::post('/subscribe', 'ContentController@subscribe')->name('subscribe');
 
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
   Route::get('/', 'AdminController@slider')->name('home');
@@ -27,8 +28,9 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
   Route::post('/slider/{id}', 'AdminController@slider_update')->name('slider.update');
   Route::post('/slider/{id}/delete', 'AdminController@slider_destroy')->name('slider.destroy');
 
-
   Route::get('/newsletter', 'AdminController@newsletter')->name('newsletter');
+  Route::get('/newsletter/download', 'AdminController@newsletter_download')->name('newsletter.download');
+
   Route::get('/news', 'AdminController@news')->name('news');
   Route::get('/event', 'AdminController@event')->name('event');
   Route::get('/article', 'AdminController@article')->name('article');

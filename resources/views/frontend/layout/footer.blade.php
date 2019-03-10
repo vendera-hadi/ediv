@@ -50,7 +50,7 @@
   <div class="row d-flex justify-content-center mt-3">
     <div class="col-md-3">
       <h5 class="text-brown text-uppercase">Newsletter</h3>
-      <form class="" action="" method="post">
+      <form action="{{route('subscribe')}}" method="post">
         @csrf
         <div class="input-group mb-3 border-brown">
           <input type="text" name="email" class="form-control border-0" placeholder="Email Address" required>
@@ -59,6 +59,11 @@
           </div>
         </div>
       </form>
+      @if(session('message'))
+      <script type="text/javascript">
+        alert("{{session('message')}}")
+      </script>
+      @endif
     </div>
   </div>
 </div>
