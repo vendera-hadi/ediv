@@ -10,7 +10,7 @@ Newsletter
   <thead class="thead-dark">
     <tr>
       <th width="30" scope="col">#</th>
-      <th width="342" scope="col">Email</th>
+      <th scope="col">Email</th>
       <th scope="col">Time</th>
     </tr>
   </thead>

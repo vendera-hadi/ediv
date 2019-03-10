@@ -34,6 +34,11 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
   Route::get('/news', 'AdminController@news')->name('news');
   Route::get('/event', 'AdminController@event')->name('event');
   Route::get('/article', 'AdminController@article')->name('article');
+  Route::get('/new-post/{type}', 'AdminController@post_new')->name('post.new');
+  Route::post('/post', 'AdminController@post_create')->name('post.create');
+  Route::get('/post/{id}/edit', 'AdminController@post_edit')->name('post.edit');
+  Route::post('/post/{id}', 'AdminController@post_update')->name('post.update');
+  Route::post('/post/{id}/delete', 'AdminController@post_destroy')->name('post.destroy');
 
   Route::get('/setting', 'AdminController@setting')->name('setting');
   Route::post('/setting', 'AdminController@setting_update')->name('setting.update');

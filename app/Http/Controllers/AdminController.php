@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Newsletter;
+use App\Models\Post;
 use App\Exports\NewsletterExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Auth;
@@ -82,17 +83,79 @@ class AdminController extends Controller
 
     public function news()
     {
-        return view('home');
+        $data['type'] = "news";
+        $data['title'] = "News";
+        $data['posts'] = Post::news()->orderBy('created_at', 'desc')->paginate(20);
+        return view('backend.post', $data);
     }
 
     public function event()
     {
-        return view('home');
+      $data['type'] = "event";
+      $data['title'] = "Events";
+      $data['posts'] = Post::event()->orderBy('created_at', 'desc')->paginate(20);
+      return view('backend.post', $data);
     }
 
     public function article()
     {
-        return view('home');
+      $data['type'] = "article";
+      $data['title'] = "Articles";
+      $data['posts'] = Post::article()->orderBy('created_at', 'desc')->paginate(20);
+      return view('backend.post', $data);
+    }
+
+    public function post_new(Request $request, $type)
+    {
+      $data['type'] = $type;
+      $data['title'] = "New ".ucfirst($data['type']);
+      $data['action'] = route('admin.post.create');
+      return view('backend.post_form', $data);
+    }
+
+    public function post_create(Request $request)
+    {
+        $path = $request->file('image')->store('images/news','public');
+        $post = new Post;
+        $post->type = $request->type;
+        $post->title = $request->title;
+        $post->slug = \Str::slug($post->title, '-');
+        $post->description = $request->desc;
+        $post->image = 'storage/'.$path;
+        $post->save();
+        return redirect('admin/'.$post->type)->with('success', 'Insert Success');
+    }
+
+    public function post_edit(Request $request, $id)
+    {
+      $post = Post::findOrFail($id);
+      $data['post'] = $post;
+      $data['type'] = $post->type;
+      $data['title'] = "Edit ".ucfirst($data['type']);
+      $data['action'] = route('admin.post.update', ['id' => $id]);
+      return view('backend.post_form', $data);
+    }
+
+    public function post_update(Request $request, $id)
+    {
+      $post = Post::findOrFail($id);
+      $post->title = $request->title;
+      $post->slug = \Str::slug($post->title, '-');
+      $post->description = $request->desc;
+      if($request->hasFile('image')){
+        $path = $request->file('image')->store('images/news','public');
+        $post->image = 'storage/'.$path;
+      }
+      $post->save();
+      return redirect('admin/'.$post->type)->with('success', 'Update Success');
+    }
+
+    public function post_destroy(Request $request, $id)
+    {
+      $post = Post::findOrFail($id);
+      $type = $post->type;
+      $post->delete();
+      return redirect('admin/'.$type)->with('success', 'Delete Success');
     }
 
     public function setting()
