@@ -7,6 +7,7 @@ use App\Models\Slider;
 use App\Models\Newsletter;
 use App\Exports\NewsletterExport;
 use Maatwebsite\Excel\Facades\Excel;
+use Auth;
 
 class AdminController extends Controller
 {
@@ -96,6 +97,20 @@ class AdminController extends Controller
 
     public function setting()
     {
-        return view('home');
+        return view('backend.setting');
+    }
+
+    public function setting_update(Request $request)
+    {
+      $password = $request->password;
+      $confirmation = $request->password_confirmation;
+      if($password != $confirmation){
+        return redirect()->back()->with('error', 'Password and Confirmation did not match');
+      }else{
+        $user = Auth::user();
+        $user->password = bcrypt($password);
+        $user->save();
+        return redirect()->back()->with('success', 'Password updated successfully');
+      }
     }
 }

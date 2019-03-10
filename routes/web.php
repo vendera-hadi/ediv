@@ -34,7 +34,9 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
   Route::get('/news', 'AdminController@news')->name('news');
   Route::get('/event', 'AdminController@event')->name('event');
   Route::get('/article', 'AdminController@article')->name('article');
+
   Route::get('/setting', 'AdminController@setting')->name('setting');
+  Route::post('/setting', 'AdminController@setting_update')->name('setting.update');
 });
 
 Auth::routes();
