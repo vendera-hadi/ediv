@@ -13969,6 +13969,10 @@ input[type=number]:focus,
   right: -30px;
 }
 
+.VueCarousel-slide {
+  position: relative;
+}
+
 .VueCarousel-dot--active {
   background-color: #a19362 !important;
 }

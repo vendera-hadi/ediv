@@ -36,7 +36,7 @@ class AdminController extends Controller
       $path = $request->file('image')->store('images/sliders','public');
       $slider = new Slider;
       $slider->type = $request->type;
-      $slider->path = $path;
+      $slider->path = 'storage/'.$path;
       $slider->url = $request->url;
       $slider->title = $request->title;
       $slider->desc = $request->desc;
@@ -49,7 +49,7 @@ class AdminController extends Controller
       $slider = Slider::findOrFail($id);
       if($request->hasFile('image')){
         $path = $request->file('image')->store('images/sliders','public');
-        $slider->path = $path;
+        $slider->path = 'storage/'.$path;
       }
       $slider->url = $request->url;
       $slider->title = $request->title;

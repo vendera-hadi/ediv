@@ -4,7 +4,7 @@
       <img v-bind:src="image.path" v-bind:title="image.title" v-bind:alt="image.title" class="img-fluid">
       <div class="slider-overlay text-left text-white" v-if="image.title">
         <h2>{{image.title}}</h2>
-        <p>{{image.description}}</p>
+        <p>{{image.desc}}</p>
       </div>
     </slide>
   </carousel>

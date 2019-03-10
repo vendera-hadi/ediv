@@ -11,7 +11,7 @@
   @if(!empty($slider))
   <div class="form-group">
     <label for="image">Old Image</label><br>
-    <img src="{{asset('storage/'.$slider->path)}}" class="img-fluid" width="400" alt="">
+    <img src="{{asset($slider->path)}}" class="img-fluid" width="400" alt="">
   </div>
   @endif
   <div class="form-group">

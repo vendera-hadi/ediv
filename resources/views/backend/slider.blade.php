@@ -7,7 +7,9 @@ Sliders
 @section('content')
 <h1>Home Page Slider</h1>
 <p>* Max 5 sliders</p>
+@if($home_sliders->count() <= 5)
 <a href="{{route('admin.slider.new', ['type' => 'home'])}}" class="btn btn-primary pull-right my-3"> Add New Home Slider</a>
+@endif
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -22,7 +24,7 @@ Sliders
     @foreach($home_sliders as $key => $slider)
       <tr>
         <th scope="row">{{$key + 1}}</th>
-        <td><img src="{{asset('storage/'.$slider->path)}}" width="300" class="img-fluid" alt=""></td>
+        <td><img src="{{asset($slider->path)}}" width="300" class="img-fluid" alt=""></td>
         <td>{{$slider->title ? $slider->title : "-"}}</td>
         <td>{{$slider->desc ? Str::limit($slider->desc, 100) : "-"}}</td>
         <td>
@@ -39,7 +41,9 @@ Sliders
 
 <h1>Company Page Slider</h1>
 <p>* Max 5 sliders</p>
+@if($company_sliders->count() <= 5)
 <a href="{{route('admin.slider.new', ['type' => 'company'])}}" class="btn btn-primary pull-right my-3"> Add New Company Slider</a>
+@endif
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -54,7 +58,7 @@ Sliders
     @foreach($company_sliders as $key => $slider)
       <tr>
         <th scope="row">{{$key + 1}}</th>
-        <td><img src="{{asset('storage/'.$slider->path)}}" width="300" class="img-fluid" alt=""></td>
+        <td><img src="{{asset($slider->path)}}" width="300" class="img-fluid" alt=""></td>
         <td>{{$slider->title ? $slider->title : "-"}}</td>
         <td>{{$slider->desc ? Str::limit($slider->desc, 100) : "-"}}</td>
         <td>
