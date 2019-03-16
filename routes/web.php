@@ -13,6 +13,7 @@
 
 Route::get('/', 'ContentController@home')->name('home');
 Route::get('/contact-us', 'ContentController@contact')->name('contact');
+Route::post('/contact-us', 'ContentController@docontact')->name('docontact');
 Route::get('/faq', 'ContentController@faq')->name('faq');
 Route::get('/pt-meiji-indonesia', 'ContentController@company')->name('company');
 Route::get('/news-event', 'ContentController@news')->name('news-event');

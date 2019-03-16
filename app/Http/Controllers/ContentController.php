@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Newsletter;
 use App\Models\Post;
+use App\Mail\ContactMail;
 
 class ContentController extends Controller
 {
@@ -19,6 +20,25 @@ class ContentController extends Controller
     public function contact()
     {
         return view('frontend.contact', []);
+    }
+
+    public function docontact(Request $request)
+    {
+        $validatedData = $request->validate([
+          'name' => 'required',
+          'phone' => 'required',
+          'message' => 'required'
+        ]);
+        $data['name'] = $request->name;
+        $data['phone'] = $request->phone;
+        $data['message'] = $request->message;
+        // send mail
+        try{
+          \Mail::to('admin@awble.com')->send(new ContactMail($data));
+          return redirect()->back()->with('success', "Your message was sent to Our team, we will respond the message as soon as possible");
+        } catch (\Exception $e) {
+          return redirect()->back()->with('error', "Failed to send message");
+        }
     }
 
     public function faq()

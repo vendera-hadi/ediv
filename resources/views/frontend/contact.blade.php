@@ -12,18 +12,41 @@ Contact Us
         <!-- contact box -->
         <div class="row d-flex justify-content-center">
           <div class="col-sm-6 bg-white contact-box-shadow p-5">
-            <form class="" action="index.html" method="post">
+            @if ($errors->any())
+            <div class="alert alert-danger">
+              <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+              </ul>
+            </div>
+            @endif
+
+            @if (session('error'))
+            <div class="alert alert-danger">
+              {{session('error')}}
+            </div>
+            @endif
+
+            @if (session('success'))
+            <div class="alert alert-success">
+              {{session('success')}}
+            </div>
+            @endif
+
+            <form action="{{route('docontact')}}" method="post">
+              @csrf
               <div class="form-group">
                 <label for="contact-name" class="text-gray">Your Name</label>
-                <input type="text" class="form-control contact-textbox" id="contact-name" placeholder="Name" required>
+                <input type="text" name="name" class="form-control contact-textbox" id="contact-name" placeholder="Name" required>
               </div>
               <div class="form-group">
                 <label for="contact-phone" class="text-gray">Phone</label>
-                <input type="text" class="form-control contact-textbox" id="contact-phone" placeholder="Phone" required>
+                <input type="text" name="phone" class="form-control contact-textbox" id="contact-phone" placeholder="Phone" required>
               </div>
               <div class="form-group">
                 <label for="contact-message" class="text-gray">Message</label>
-                <input type="text" class="form-control contact-textbox" id="contact-messsage" placeholder="Message" required>
+                <input type="text" name="message" class="form-control contact-textbox" id="contact-messsage" placeholder="Message" required>
               </div>
               <button type="submit" class="btn btn-pink text-brown pull-right">Submit</button>
             </form>
