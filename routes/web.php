@@ -17,6 +17,8 @@ Route::get('/faq', 'ContentController@faq')->name('faq');
 Route::get('/pt-meiji-indonesia', 'ContentController@company')->name('company');
 Route::get('/news-event', 'ContentController@news')->name('news-event');
 Route::get('/article', 'ContentController@article')->name('article');
+Route::get('/article/{slug}', 'ContentController@article_detail')->name('article_detail');
+Route::get('/all/{type}', 'ContentController@article_list')->name('article_list');
 Route::get('/product', 'ContentController@product')->name('product');
 Route::post('/subscribe', 'ContentController@subscribe')->name('subscribe');
 

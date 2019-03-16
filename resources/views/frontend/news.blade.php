@@ -30,63 +30,23 @@ News and Event
         <div class="col-sm-6">
           <div class="row">
             <!-- news first -->
-            <div class="col-sm-12">
+            @foreach($news as $key => $post)
+            <div class="{{ $key == 0 ? 'col-sm-12' : 'col-sm-6 my-3'}}">
               <div class="card">
-                <img class="card-img-top img-fluid fit-image" src="{{asset('images/news/News 2.png')}}" alt="title">
+                <a href="{{route('article_detail', ['slug' => $post->slug])}}" title="{{$post->title}}">
+                  <img class="card-img-top img-fluid {{ $key == 0 ? 'fit-image' : 'fit-image-small'}}" src="{{asset($post->image)}}" alt="{{ $post->title }}">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-blue text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
+                  <h5 class="card-title">{{ $post->title }}</h5>
+                  <p class="card-text">{{Str::limit(strip_tags($post->description), 100)}}</p>
+                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-blue text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-blue text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-blue text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-blue text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-blue text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
+            @endforeach
 
             <div class="col-sm-12 my-3">
-              <a href="#" class="btn btn-blue font-weight-bold text-white pull-right">Read All News</a>
+              <a href="{{route('article_list', ['type' => 'news'])}}" class="btn btn-blue font-weight-bold text-white pull-right">Read All News</a>
             </div>
 
           </div>
@@ -96,64 +56,24 @@ News and Event
         <div class="col-sm-6">
           <div class="row">
             <!-- event first -->
-            <div class="col-sm-12">
+            @foreach($events as $key => $post)
+            <div class="{{ $key == 0 ? 'col-sm-12' : 'col-sm-6 my-3'}}">
               <div class="card">
-                <img class="card-img-top img-fluid fit-image" src="{{asset('images/news/News 2.png')}}" alt="title">
+                <a href="{{route('article_detail', ['slug' => $post->slug])}}" title="{{$post->title}}">
+                  <img class="card-img-top img-fluid {{ $key == 0 ? 'fit-image' : 'fit-image-small'}}" src="{{asset($post->image)}}" alt="{{ $post->title }}">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-pink font-weight-bold text-white rounded-circle pull-right px-3 py-2">Read More</a>
+                  <h5 class="card-title">{{ $post->title }}</h5>
+                  <p class="card-text">{{Str::limit(strip_tags($post->description), 100)}}</p>
+                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-pink text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
                 </div>
               </div>
             </div>
+            @endforeach
             <!-- end -->
 
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-pink text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-pink text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-pink text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 my-3">
-              <div class="card">
-                <img class="card-img-top img-fluid fit-image-small" src="{{asset('images/news/News 2.png')}}" alt="title">
-                <div class="card-body">
-                  <h5 class="card-title">News Title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-pink text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
-                </div>
-              </div>
-            </div>
-
             <div class="col-sm-12 my-3">
-              <a href="#" class="btn btn-pink font-weight-bold text-white pull-right">Read All Events</a>
+              <a href="{{route('article_list', ['type' => 'event'])}}" class="btn btn-pink font-weight-bold text-white pull-right">Read All Events</a>
             </div>
 
           </div>

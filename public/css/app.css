@@ -13767,6 +13767,11 @@ input[type=number]:focus,
   border: 2px solid #61574a;
 }
 
+.bg-brown {
+  background-color: #61574a;
+  color: #fff;
+}
+
 .btn-brown {
   background-color: #61574a;
   color: #fff;
@@ -13778,6 +13783,19 @@ input[type=number]:focus,
 
 .btn-blue {
   background-color: #7abece;
+}
+
+.page-item.active .page-link {
+  background-color: #61574a;
+  border-color: #61574a;
+}
+
+.page-link {
+  color: #61574a;
+}
+
+.page-link:hover {
+  color: #61574a;
 }
 
 .bg-pink {
