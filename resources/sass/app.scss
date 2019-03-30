@@ -31,6 +31,11 @@ body {
   font-family: "poppins";
 }
 
+@font-face{
+  src: url(../../public/fonts/Brownhill_Script.ttf);
+  font-family: "brownhill";
+}
+
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,
@@ -62,8 +67,16 @@ input[type=number]:focus,
     color: #61574a;
   }
 
+  &-light-brown {
+    color: #c3af96;
+  }
+
   &-gray {
     color: gray;
+  }
+
+  &-light-gray {
+    color: #e8e2d6;
   }
 
   &-pink {
@@ -83,7 +96,7 @@ input[type=number]:focus,
   }
 
   &-custom2 {
-    font-family: 'Satisfy', cursive;
+    font-family: 'brownhill', cursive;
   }
 }
 
@@ -108,6 +121,9 @@ input[type=number]:focus,
   }
   &-blue {
     background-color: #7abece;
+  }
+  &-rounded {
+    border-radius: 20px;
   }
 }
 
@@ -517,7 +533,7 @@ input[type=number]:focus,
   }
 
   &-header-title {
-    font-size: 55px;
+    font-size: 70px;
   }
 }
 

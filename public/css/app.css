@@ -13727,6 +13727,11 @@ body {
   font-family: "poppins";
 }
 
+@font-face {
+  src: url(/fonts/Brownhill_Script.ttf?4da5b4cd8c49dc58ee4af8183d7a7e43);
+  font-family: "brownhill";
+}
+
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,
@@ -13757,8 +13762,16 @@ input[type=number]:focus,
   color: #61574a;
 }
 
+.text-light-brown {
+  color: #c3af96;
+}
+
 .text-gray {
   color: gray;
+}
+
+.text-light-gray {
+  color: #e8e2d6;
 }
 
 .text-pink {
@@ -13778,7 +13791,7 @@ input[type=number]:focus,
 }
 
 .text-custom2 {
-  font-family: "Satisfy", cursive;
+  font-family: "brownhill", cursive;
 }
 
 .border-brown {
@@ -13801,6 +13814,10 @@ input[type=number]:focus,
 
 .btn-blue {
   background-color: #7abece;
+}
+
+.btn-rounded {
+  border-radius: 20px;
 }
 
 .page-item.active .page-link {
@@ -14195,7 +14212,7 @@ input[type=number]:focus,
 }
 
 .news-header-title {
-  font-size: 55px;
+  font-size: 70px;
 }
 
 .company-box {

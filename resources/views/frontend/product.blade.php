@@ -102,7 +102,7 @@ Product
     <div class="row d-flex justify-content-center my-5">
       <div class="col-sm-9">
         <div class="obj-bottom-title-bg"></div>
-        <h1 class="text-pink text-custom news-header-title mb-5">Evening Primroses Oil</h1>
+        <h1 class="text-pink text-custom2 news-header-title mb-5">Evening Primroses Oil</h1>
         <div class="row">
           <div class="col-sm-3" data-aos="fade-down-left">
             <div class="row" width="130">
@@ -138,7 +138,7 @@ Product
     <div class="row d-flex justify-content-center my-5">
       <div class="col-sm-9">
         <div class="obj-bottom-title-bg-2"></div>
-        <h1 class="text-pink text-custom obj-bottom-title-2 mb-5 text-right">VIT E</h1>
+        <h1 class="text-pink text-custom2 obj-bottom-title-2 mb-5 text-right">VIT E</h1>
         <div class="row">
           <div class="col-sm-3" data-aos="fade-down-left" data-aos-delay="1000">
             <div class="row">
@@ -172,7 +172,7 @@ Product
     <div class="row d-flex justify-content-center my-5">
       <div class="col-sm-9">
         <div class="obj-bottom-title-bg"></div>
-        <h1 class="text-pink news-header-title text-custom mb-5">GAC Fruit</h1>
+        <h1 class="text-pink news-header-title text-custom2 mb-5">GAC Fruit</h1>
         <div class="row">
           <div class="col-sm-3" data-aos="fade-down-left">
             <div class="row">
@@ -187,7 +187,7 @@ Product
           </div>
           <!-- image -->
           <div class="col-sm-6" data-aos="fade-up" data-aos-delay="2000">
-            <img src="{{asset('images/gac-fruit.png')}}" class="img-fluid" width="580" alt="primroses">
+            <img src="{{asset('images/gac-fruit-2.png')}}" class="img-fluid" width="580" alt="primroses">
           </div>
           <!-- right -->
           <div class="col-sm-3" data-aos="fade-down-right" data-aos-delay="1000">
@@ -208,7 +208,7 @@ Product
     <div class="row d-flex justify-content-center my-5">
       <div class="col-sm-9">
         <div class="obj-bottom-title-bg-4"></div>
-        <h1 class="text-pink text-custom obj-bottom-title-2 mb-5 text-right">Royal Jelly</h1>
+        <h1 class="text-pink text-custom2 obj-bottom-title-2 mb-5 text-right">Royal Jelly</h1>
         <div class="row">
           <!-- top -->
           <div class="col-sm-12" data-aos="fade-up-left" data-aos-delay="3000">
@@ -288,7 +288,7 @@ Product
     <div class="row my-5">
       <div class="col-sm-12">
         <h1 class="text-custom text-red text-center news-header-title my-3">GAC Fruit</h1>
-        <img src="{{asset('images/gac-fruit.png')}}" class="img-fluid" width="580" alt="primroses">
+        <img src="{{asset('images/gac-fruit-2.png')}}" class="img-fluid" width="580" alt="primroses">
       </div>
       <div class="col-sm-12 text-center">
         <h3 class="text-brown font-weight-bold my-3">Tinggi Kandungan Betacarotine</h5>

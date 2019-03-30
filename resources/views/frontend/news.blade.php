@@ -18,10 +18,10 @@ News and Event
     <div class="container mt-5">
       <div class="row d-flex justify-content-center">
         <div class="col-sm-6">
-          <h1 class="text-custom text-brown news-header-title">News</h1>
+          <h1 class="text-custom2 text-brown news-header-title">News</h1>
         </div>
         <div class="col-sm-6">
-          <h1 class="text-custom text-right text-brown news-header-title">Event</h1>
+          <h1 class="text-custom2 text-right text-brown news-header-title">Event</h1>
         </div>
       </div>
 
@@ -39,14 +39,14 @@ News and Event
                 <div class="card-body">
                   <h5 class="card-title">{{ $post->title }}</h5>
                   <p class="card-text">{{Str::limit(strip_tags($post->description), 100)}}</p>
-                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-blue text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
+                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-blue text-white font-weight-bold btn-rounded pull-right px-3 py-2">Read More</a>
                 </div>
               </div>
             </div>
             @endforeach
 
             <div class="col-sm-12 my-3">
-              <a href="{{route('article_list', ['type' => 'news'])}}" class="btn btn-blue font-weight-bold text-white pull-right">Read All News</a>
+              <a href="{{route('article_list', ['type' => 'news'])}}" class="btn btn-blue btn-rounded font-weight-bold text-white pull-right">Read All News</a>
             </div>
 
           </div>
@@ -65,7 +65,7 @@ News and Event
                 <div class="card-body">
                   <h5 class="card-title">{{ $post->title }}</h5>
                   <p class="card-text">{{Str::limit(strip_tags($post->description), 100)}}</p>
-                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-pink text-white font-weight-bold rounded-circle pull-right px-3 py-2">Read More</a>
+                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-pink text-white font-weight-bold btn-rounded pull-right px-3 py-2">Read More</a>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ News and Event
             <!-- end -->
 
             <div class="col-sm-12 my-3">
-              <a href="{{route('article_list', ['type' => 'event'])}}" class="btn btn-pink font-weight-bold text-white pull-right">Read All Events</a>
+              <a href="{{route('article_list', ['type' => 'event'])}}" class="btn btn-pink btn-rounded font-weight-bold text-white pull-right">Read All Events</a>
             </div>
 
           </div>
