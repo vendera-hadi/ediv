@@ -65,25 +65,34 @@ Home
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center mt-5">
+      <div class="row d-flex justify-content-center title-group-1">
         <div class="col-sm-6">
-          <h1 class="text-red text-custom text-right px-5">Gac Fruit</h1>
+          <h1 class="text-red text-custom text-right" style="padding-right: 80px">Gac Fruit</h1>
         </div>
         <div class="col-sm-6">
-          <h1 class="text-orange text-custom px-5">Royal Jelly</h1>
+          <h1 class="text-orange text-custom" style="padding-left: 80px;">Royal Jelly</h1>
         </div>
       </div>
 
       <div class="row d-flex justify-content-center" style="margin-top: 300px">
-        <div class="col-sm-8">
-          <h1 class="text-gray text-custom text-center px-5">Evening Primrose Oil</h1>
-          <center><img src="{{asset('images/primrose.png')}}" width="350" class="img-fluid" alt="" data-aos="fade-down"></center>
+        <div class="col-sm-6">
+          <h2 class="text-brown text-custom text-right px-5">Evening<br>Primrose<br>Oil</h1>
+          <img src="{{asset('images/primrose.png')}}" width="350" class="img-fluid primrose-left" alt="" data-aos="fade-down">
+          <img src="{{asset('images/vit-e.png')}}" width="150" class="img-fluid vit-e-left" alt="" data-aos="fade-down">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="text-brown text-custom text-left px-5">Evening<br>Primrose<br>Oil</h1>
+          <center><img src="{{asset('images/primrose2.png')}}" width="350" class="img-fluid primrose-right" alt="" data-aos="fade-down"></center>
           <br>
-          <center><img src="{{asset('images/vit-e.png')}}" width="150" class="img-fluid" alt="" data-aos="fade-down"></center>
+          <center><img src="{{asset('images/vit-e.png')}}" width="150" class="img-fluid vit-e-right" alt="" data-aos="fade-down"></center>
         </div>
       </div>
 
-      <div class="home-jelly-right" data-aos="fade-down"></div>
+      <div class="home-jelly-right"></div>
+      <div class="home-jelly-right2"></div>
+      <div class="home-jelly-right3" data-aos="fade-down"></div>
+      <div class="home-jelly-right4" data-aos="fade-down"></div>
+
       <div class="home-jelly-desc-1">
         <div class="row" data-aos="fade-down-left">
           <div class="col-sm-12">
@@ -101,25 +110,31 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Vitamin B Complex</h5>
+            <h5 class="text-brown font-weight-bold w-100 my-3" style="font-size: medium">Vitamin B Complex</h5>
           </div>
         </div>
       </div>
 
       <div class="home-jelly-desc-3">
         <div class="row" data-aos="fade-down-right">
-          <div class="col-sm-12">
-            <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
+          <div class="col-sm-6 offset-sm-6">
+            <h5 class="text-brown font-weight-bold w-100 my-3">Enzim</h5>
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Enzim</h5>
+            <img src="{{asset('images/arrow-up-2.png')}}" width="110" class="img-fluid" alt="">
           </div>
         </div>
       </div>
 
-      <div class="home-fruit-left" data-aos="fade-down"></div>
+      <div class="home-fruit-left"></div>
+      <div class="home-fruit-bulir1 bulir" data-aos="fade-down-right"></div>
+      <div class="home-fruit-bulir2 bulir" data-aos="fade-down-right" data-aos-delay="500"></div>
+      <div class="home-fruit-bulir3 bulir" data-aos="fade-down-right" data-aos-delay="1000"></div>
+      <div class="home-fruit-bulir4 bulir" data-aos="fade-down-right" data-aos-delay="1000"></div>
+      <div class="home-fruit-bulir5 bulir" data-aos="fade-down-right" data-aos-delay="1500"></div>
+
       <div class="home-fruit-desc-1">
-        <div class="row" data-aos="fade-down-left">
+        <div class="row" data-aos="fade-down-left" data-aos-delay="1000">
           <div class="col-sm-12">
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
@@ -130,7 +145,7 @@ Home
       </div>
 
       <div class="home-fruit-desc-2">
-        <div class="row" data-aos="fade-down-right">
+        <div class="row" data-aos="fade-down-right" data-aos-delay="1000">
           <div class="col-sm-12">
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
@@ -142,7 +157,7 @@ Home
 
       <div class="home-primrose-desc-1">
         <div class="row" data-aos="fade-down-left">
-          <div class="col-sm-12">
+          <div class="offset-sm-4 col-sm-4">
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
@@ -238,16 +253,16 @@ Home
         <div class="row d-flex justify-content-center why-container">
         <div class="col-sm-6">
           <div class="row why-1 d-flex flex-row-reverse">
-            <div class="col-sm-6">
-              <h1 class="text-custom text-red font-weight-bold">Ediva Pure</h3>
+            <div class="col-sm-6 px-4">
+              <h1 class="text-red font-weight-bold">Ediva Pure</h3>
               <p>Kombinasi Vit E, Evening Primrose Oil, dan buah Gac dapat menjadi anti-inflamasi yang mengurangi nyeri pre menstruasi dan meningkatkan level antioksidan yang menurun saat haid. Sehingga membebaskan kamu dari rasa khawatir saat datang bulan.</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 mt-5">
           <div class="row why-2 d-flex flex-row-reverse">
-            <div class="col-sm-6">
-              <h1 class="text-custom text-primary font-weight-bold">Ediva Young</h3>
+            <div class="col-sm-6 px-4">
+              <h1 class="text-primary font-weight-bold">Ediva Young</h3>
               <p>Kandungan alami dalam setiap kapsul Ediva Young memberikan manfaat untuk memberikan kolagen pada lapisan dalam kulit (dermis), sehingga proses regenerasi sel kulit akan tetap terjaga. Membuat kulit menjadi jauh lebih elastis, sehat dan tampak cerah.</p>
             </div>
           </div>

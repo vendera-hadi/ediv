@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 
@@ -12,9 +12,23 @@
 // AOS animation
 @import '~aos/dist/aos.css';
 
+body {
+  font-family: 'Roboto', cursive;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+@font-face{
+  src: url(../../public/fonts/freescpt.ttf);
+  font-family: "freescpt";
+}
+
+@font-face{
+  src: url(../../public/fonts/Poppins-Regular.ttf);
+  font-family: "poppins";
 }
 
 textarea:focus,
@@ -65,6 +79,10 @@ input[type=number]:focus,
   }
 
   &-custom {
+    font-family: 'freescpt', cursive;
+  }
+
+  &-custom2 {
     font-family: 'Satisfy', cursive;
   }
 }
@@ -144,6 +162,10 @@ input[type=number]:focus,
 
 .footer-box {
   background-color: #f0e6da;
+  background-image:url(/images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'poppins', cursive;
 }
 
 #product {
@@ -161,17 +183,56 @@ input[type=number]:focus,
   position: relative;
   margin-top: 4rem !important;
   background-color: #fffaf4;
-  min-height: 1000px;
+  min-height: 1200px;
   &-mobile {
     display: none;
   }
 
   h1.text-custom {
-    font-size: 65px;
+    font-size: 85px;
     background-image: url(/images/obj-bottom-desc-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 135px;
+    padding-top: 37px;
   }
+
+  h2.text-custom {
+    font-size: 60px;
+    background: none;
+  }
+
+  .primrose-left {
+    position: absolute;
+    top: 0;
+    left: 110px;
+  }
+
+  .primrose-right {
+    position: absolute;
+    top: 0;
+    right: 68px;
+    z-index: 1;
+  }
+
+  .vit-e-left {
+    position: absolute;
+    top: 398px;
+    left: 200px;
+  }
+
+  .vit-e-right {
+    position: absolute;
+    top: 398px;
+    right: 135px;
+    z-index: 2;
+  }
+}
+
+#why-ediva {
+  background-image:url(/images/why-ediva-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .why-container {
@@ -212,7 +273,7 @@ input[type=number]:focus,
 
   &-jelly {
     &-right {
-      background-image:url(/images/jelly-right.png);
+      background-image:url(/images/jelly-right1.png);
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
@@ -222,24 +283,58 @@ input[type=number]:focus,
       height: 530px;
     }
 
+    &-right2 {
+      background-image:url(/images/jelly-right2-2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 324px;
+      right: -2px;
+      width: 300px;
+      height: 232px;
+    }
+
+    &-right3 {
+      background-image:url(/images/jelly-right3-2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 512px;
+      right: -2px;
+      width: 300px;
+      height: 299px;
+    }
+
+    &-right4 {
+      background-image:url(/images/jelly-right4.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 712px;
+      right: -2px;
+      width: 300px;
+      height: 341px;
+    }
+
     &-desc-1{
       position: absolute;
-      top: 360px;
-      right: 175px;
+      top: 525px;
+      right: 140px;
       width: 235px;
+      z-index: 2;
     }
 
     &-desc-2{
       position: absolute;
-      top: 328px;
-      right: 3px;
+      top: 469px;
+      right: -68px;
       width: 235px;
     }
 
     &-desc-3{
       position: absolute;
-      top: 528px;
-      right: 91px;
+      top: 690px;
+      right: 30px;
       width: 142px;
     }
   }
@@ -250,23 +345,78 @@ input[type=number]:focus,
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
-      top: 235px;
-      left: 35px;
-      width: 400px;
-      height: 300px;
-      -webkit-transform: rotate(30deg);
+      top: 10px;
+      left: 0;
+      width: 231px;
+      height: 453px;
     }
+
+    &-bulir1{
+      background-image:url(/images/bulir1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 260px;
+      left: 150px;
+      width: 46px;
+      height: 43px;
+    }
+
+    &-bulir2{
+      background-image:url(/images/bulir2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 323px;
+      left: 197px;
+      width: 35px;
+      height: 37px;
+    }
+
+    &-bulir3{
+      background-image:url(/images/bulir3.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 371px;
+      left: 230px;
+      width: 25px;
+      height: 29px;
+    }
+
+    &-bulir4{
+      background-image:url(/images/bulir4.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 398px;
+      left: 250px;
+      width: 37px;
+      height: 36px;
+    }
+
+    &-bulir5{
+      background-image:url(/images/bulir3.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 465px;
+      left: 270px;
+      width: 25px;
+      height: 29px;
+    }
+
     &-desc-1{
       position: absolute;
       top: 460px;
-      left: 50px;
+      left: 79px;
       width: 235px;
     }
 
     &-desc-2{
       position: absolute;
       top: 328px;
-      left: 429px;
+      left: 328px;
       width: 235px;
     }
   }
@@ -274,15 +424,15 @@ input[type=number]:focus,
   &-primrose {
     &-desc-1{
       position: absolute;
-      top: 726px;
-      left: 347px;
+      top: 694px;
+      left: 11px;
       width: 235px;
     }
 
     &-desc-2{
       position: absolute;
-      top: 728px;
-      right: 257px;
+      top: 828px;
+      left: 357px;
       width: 235px;
     }
 
@@ -302,6 +452,20 @@ input[type=number]:focus,
     display: grid !important;
     top: 0;
     right: -30px;
+  }
+
+  .VueCarousel-navigation-prev {
+    left: 47px;
+    font-size: xx-large;
+    color: #a19362;
+    outline: none;
+  }
+
+  .VueCarousel-navigation-next {
+    right: 62px;
+    font-size: xx-large;
+    color: #a19362;
+    outline: none;
   }
 }
 
@@ -391,6 +555,23 @@ input[type=number]:focus,
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+}
+
+#company {
+  .VueCarousel-navigation-prev {
+    left: 47px;
+    font-size: xx-large;
+    color: #a19362 !important;
+    outline: none;
+  }
+
+  .VueCarousel-navigation-next {
+    right: 62px;
+    font-size: xx-large;
+    color: #a19362 !important;
+    outline: none;
   }
 }
 
@@ -494,6 +675,17 @@ input[type=number]:focus,
     }
   }
 
+}
+
+.aos-animate {
+  &.bulir {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
 }
 
 
@@ -643,6 +835,39 @@ input[type=number]:focus,
   }
 }
 
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
 
 @include media-breakpoint-down(xs) {
   #sitemap {
@@ -742,6 +967,10 @@ input[type=number]:focus,
     display: none;
     &-mobile {
       display: block;
+    }
+
+    .title-group-1 {
+      margin-top: 10rem !important;
     }
   }
 

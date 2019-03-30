@@ -36866,7 +36866,8 @@ var render = function() {
         scrollPerPage: true,
         perPage: 1,
         autoplay: true,
-        paginationPadding: 3
+        paginationPadding: 3,
+        navigationEnabled: true
       }
     },
     _vm._l(_vm.images, function(image, index) {
