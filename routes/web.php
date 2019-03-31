@@ -47,6 +47,13 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
   Route::post('/setting', 'AdminController@setting_update')->name('setting.update');
 
   Route::get('/contactlog', 'AdminController@contactlog')->name('contactlog');
+
+  Route::get('/faq', 'AdminController@faq')->name('faq.index');
+  Route::post('/faq', 'AdminController@faq_create')->name('faq.create');
+  Route::get('/faq/new', 'AdminController@faq_new')->name('faq.new');
+  Route::get('/faq/{id}/edit', 'AdminController@faq_edit')->name('faq.edit');
+  Route::post('/faq/{id}', 'AdminController@faq_update')->name('faq.update');
+  Route::post('/faq/{id}/delete', 'AdminController@faq_destroy')->name('faq.destroy');
 });
 
 Auth::routes();

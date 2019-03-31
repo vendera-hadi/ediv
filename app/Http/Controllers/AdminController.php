@@ -7,6 +7,7 @@ use App\Models\Slider;
 use App\Models\Newsletter;
 use App\Models\Post;
 use App\Models\ContactLog;
+use App\Models\Faq;
 use App\Exports\NewsletterExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Auth;
@@ -182,5 +183,51 @@ class AdminController extends Controller
     {
         $data['logs'] = ContactLog::orderBy('created_at', 'desc')->paginate(20);
         return view('backend.contact', $data);
+    }
+
+    public function faq()
+    {
+        $data['faqs'] = Faq::orderBy('id')->get();
+        return view('backend.faq', $data);
+    }
+
+    public function faq_new()
+    {
+        $data['title'] = "New FAQ";
+        $data['action'] = route('admin.faq.create');
+        return view('backend.faq_form', $data);
+    }
+
+    public function faq_create(Request $request)
+    {
+        $faq = new Faq;
+        $faq->title = $request->title;
+        $faq->description = $request->description;
+        $faq->save();
+        return redirect('admin/faq')->with('success', 'Insert Success');
+    }
+
+    public function faq_edit(Request $request, $id)
+    {
+        $data['faq'] = Faq::findOrFail($id);
+        $data['title'] = "Edit FAQ";
+        $data['action'] = route('admin.faq.update', ['id' => $id]);
+        return view('backend.faq_form', $data);
+    }
+
+    public function faq_update(Request $request, $id)
+    {
+      $faq = Faq::findOrFail($id);
+      $faq->title = $request->title;
+      $faq->description = $request->description;
+      $faq->save();
+      return redirect('admin/faq')->with('success', 'Update Success');
+    }
+
+    public function faq_destroy(Request $request, $id)
+    {
+      $faq = Faq::findOrFail($id);
+      $faq->delete();
+      return redirect('admin/faq')->with('success', 'Delete Success');
     }
 }

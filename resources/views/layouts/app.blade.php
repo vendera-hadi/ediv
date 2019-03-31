@@ -51,6 +51,9 @@
                       <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.contactlog' ? 'font-weight-bold' : ''}}">
                         <a class="nav-link" href="{{route('admin.contactlog')}}">Contact Log</a>
                       </li>
+                      <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.faq.index' ? 'font-weight-bold' : ''}}">
+                        <a class="nav-link" href="{{route('admin.faq.index')}}">FAQ</a>
+                      </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

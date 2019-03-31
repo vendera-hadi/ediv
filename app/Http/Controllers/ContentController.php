@@ -7,6 +7,7 @@ use App\Models\Slider;
 use App\Models\Newsletter;
 use App\Models\Post;
 use App\Models\ContactLog;
+use App\Models\Faq;
 use App\Mail\ContactMail;
 
 class ContentController extends Controller
@@ -52,7 +53,8 @@ class ContentController extends Controller
 
     public function faq()
     {
-        return view('frontend.faq', []);
+        $data['faqs'] = Faq::orderBy('created_at')->get();
+        return view('frontend.faq', $data);
     }
 
     public function company()
