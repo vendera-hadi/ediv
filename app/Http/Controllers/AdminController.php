@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Newsletter;
 use App\Models\Post;
+use App\Models\ContactLog;
 use App\Exports\NewsletterExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Auth;
@@ -175,5 +176,11 @@ class AdminController extends Controller
         $user->save();
         return redirect()->back()->with('success', 'Password updated successfully');
       }
+    }
+
+    public function contactlog()
+    {
+        $data['logs'] = ContactLog::orderBy('created_at', 'desc')->paginate(20);
+        return view('backend.contact', $data);
     }
 }

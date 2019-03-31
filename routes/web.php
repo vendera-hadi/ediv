@@ -45,6 +45,8 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
 
   Route::get('/setting', 'AdminController@setting')->name('setting');
   Route::post('/setting', 'AdminController@setting_update')->name('setting.update');
+
+  Route::get('/contactlog', 'AdminController@contactlog')->name('contactlog');
 });
 
 Auth::routes();
