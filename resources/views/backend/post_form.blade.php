@@ -35,7 +35,7 @@
   <a href="{{route('admin.'.$type)}}" class="btn btn-secondary">Back</a>
   <button type="submit" class="btn btn-primary pull-right">Submit</button>
 </form>
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+<script src="{{asset('laravel-ckeditor/ckeditor.js')}}"></script>
 <script>
     CKEDITOR.replace( 'article-ckeditor' );
 </script>
