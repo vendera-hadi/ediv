@@ -59,17 +59,17 @@ Contact Us
             </p>
             <table class="text-brown">
               <tr>
-                <td><i class="fa fa-phone fa-lg"></i></td>
+                <td><img src="{{asset('images/icon-phone.png')}}" width="27"></td>
                 <td width="40" class="text-right">:</td>
                 <td>(62-21) 384 5584</td>
               </tr>
               <tr>
-                <td><i class="fa fa-fax fa-lg"></i></td>
+                <td><img src="{{asset('images/icon-fax.png')}}" width="27"></td>
                 <td class="text-right">:</td>
                 <td>(62-21) 345 7650</td>
               </tr>
               <tr>
-                <td><i class="fa fa-envelope fa-lg"></i></td>
+                <td><img src="{{asset('images/icon-email.png')}}" width="27"></td>
                 <td class="text-right">:</td>
                 <td>adm@meiji.co.id</td>
               </tr>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Newsletter;
 use App\Models\Post;
+use App\Models\ContactLog;
 use App\Mail\ContactMail;
 
 class ContentController extends Controller
@@ -32,6 +33,14 @@ class ContentController extends Controller
         $data['name'] = $request->name;
         $data['phone'] = $request->phone;
         $data['message'] = $request->message;
+
+        // save database
+        $contact = new ContactLog;
+        $contact->name = $request->name;
+        $contact->phone = $request->phone;
+        $contact->message = $request->message;
+        $contact->save();
+
         // send mail
         try{
           \Mail::to('admin@awble.com')->send(new ContactMail($data));
