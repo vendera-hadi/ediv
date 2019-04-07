@@ -5,10 +5,10 @@ Frequently Asked Questions
 @endsection
 
 @section('content')
-<section id="faq" class="container-fluid">
+<section id="faqs" class="container-fluid">
   <div class="row d-flex justify-content-center">
     <div class="col-sm-9">
-      <img src="{{asset('images/faq-banner.jpg')}}" class="img-fluid" alt="">
+      <img src="{{asset('images/faq-banner2.jpg')}}" class="img-fluid" alt="">
     </div>
   </div>
   <div class="row d-flex justify-content-center faq-decor-bg">
@@ -17,17 +17,17 @@ Frequently Asked Questions
       <div class="row d-flex justify-content-center my-5">
         <div class="col-sm-9">
           <div id="accordion">
-            @foreach($faqs as $faq)
+            @foreach($faqs as $key => $faq)
             <div class="card my-2">
-              <div class="card-header" id="headingOne">
+              <div class="card-header" id="heading{{$key}}">
                 <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="btn btn-link {{ $key == 0 ? '' : 'collapsed' }}" data-toggle="collapse" data-target="#collapse{{$key}}" aria-expanded="{{ $key == 0 ? 'true' : 'false' }}" aria-controls="collapse{{$key}}">
                     {{$faq->title}}
                   </button>
                 </h5>
               </div>
 
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapse{{$key}}" class="collapse {{ $key == 0 ? 'show' : '' }}" aria-labelledby="heading{{$key}}" data-parent="#accordion">
                 <div class="card-body">
                   {{$faq->description}}
                 </div>
@@ -38,6 +38,7 @@ Frequently Asked Questions
         </div>
       </div>
       <!-- accordion -->
+
       <div class="faq-decor-left">
         <img src="{{asset('images/faq-decor-1.png')}}" width="210" alt="">
       </div>

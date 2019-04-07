@@ -32,7 +32,7 @@ Home
           <p class="text-gray">Suplemen alami yang dapat memelihara juga membantu mengurangi berbagai permasalahan yang timbul pada kulit</p>
         </div>
         <div class="col-sm-6" data-aos="fade-left">
-          <img src="{{asset('images/ediva_young.png')}}" class="img-fluid" alt="">
+          <img src="{{asset('images/ediva_young2.png')}}" class="img-fluid" alt="">
         </div>
       </div>
     </section>
@@ -49,7 +49,7 @@ Home
       <div class="row">
         <div class="col-sm-12 text-center">
           <h1 class="text-light-gray text-custom my-3">Ediva Young</h1>
-          <img src="{{asset('images/ediva_young.png')}}" class="img-fluid my-3" alt="">
+          <img src="{{asset('images/ediva_young2.png')}}" class="img-fluid my-3" alt="">
           <p class="text-gray my-3">Suplemen alami yang dapat memelihara juga membantu mengurangi berbagai permasalahan yang timbul pada kulit</p>
         </div>
       </div>
@@ -197,7 +197,7 @@ Home
 
       <div class="row my-5">
         <div class="col-sm-12">
-          <h1 class="text-custom text-red text-center news-header-title my-3">VIT E</h1>
+          <h1 class="text-custom text-red text-center news-header-title my-3">VIT - E</h1>
           <center><img src="{{asset('images/vit-e.png')}}" class="img-fluid my-3" alt="primroses" width="220"></center>
         </div>
         <div class="col-sm-12 text-center">
@@ -273,7 +273,7 @@ Home
 
     <section id="video" class="container-fluid py-5 my-5">
       <div class="embed-responsive embed-responsive-21by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bus0q6JDyBQ" allowfullscreen></iframe>
       </div>
     </section>
   </div>

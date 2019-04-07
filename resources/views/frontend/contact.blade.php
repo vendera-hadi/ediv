@@ -76,7 +76,7 @@ Contact Us
             </table>
           </div>
           <div class="contact-product-img">
-            <img src="{{asset('images/contact-product.png')}}" width="487" alt="">
+            <img src="{{asset('images/contact-product2.png')}}" width="487" alt="">
           </div>
         </div>
         <!-- contact box -->

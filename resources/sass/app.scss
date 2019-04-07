@@ -55,10 +55,12 @@ input[type=number]:focus,
   width: 100%;
   object-fit: cover;
   height: 300px;
+}
 
-  &-small {
-    height: 210px;
-  }
+.fit-image-small{
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
 }
 
 

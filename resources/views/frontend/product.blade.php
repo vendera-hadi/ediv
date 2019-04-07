@@ -70,7 +70,7 @@ Product
       <!-- right -->
       <div class="col-sm-6">
         <div class="obj-middle-1 mt-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="500">
-          <img src="{{asset('images/ediva_young.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
+          <img src="{{asset('images/ediva_young2.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
         </div>
         <div class="obj-middle-2" data-aos="fade-down-left" data-aos-delay="1000">
           <img src="{{asset('images/product-obj-2.png')}}" width="165" class="img-fluid my-3" alt="">
@@ -84,7 +84,7 @@ Product
     <div class="row">
       <div class="col-sm-12">
         <h1 class="text-custom text-gray text-center news-header-title my-3">Ediva Young</h1>
-        <img src="{{asset('images/ediva_young.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
+        <img src="{{asset('images/ediva_young2.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
       </div>
       <div class="col-sm-12 my-3">
         <center><img src="{{asset('images/young-obj-1.png')}}" width="150" title="meningkatkan produksi kolagen" class="img-fluid my-3" alt="ediva young"></center>
@@ -104,7 +104,7 @@ Product
         <div class="obj-bottom-title-bg"></div>
         <h1 class="text-pink text-custom2 news-header-title mb-5">Evening Primroses Oil</h1>
         <div class="row">
-          <div class="col-sm-3" data-aos="fade-down-left">
+          <div class="col-sm-3" data-aos="fade-down-left" data-aos-delay="1000">
             <div class="row" width="130">
               <div class="col-sm-12">
                 <img src="{{asset('images/arrow-left.png')}}" class="img-fluid pull-right" alt="">
@@ -116,11 +116,11 @@ Product
             </div>
           </div>
           <!-- image -->
-          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="2000">
+          <div class="col-sm-6" data-aos="fade-up">
             <img src="{{asset('images/primroses.png')}}" class="img-fluid" width="580" alt="primroses">
           </div>
           <!-- right -->
-          <div class="col-sm-3" data-aos="fade-down-right" data-aos-delay="1000">
+          <div class="col-sm-3" data-aos="fade-down-right" data-aos-delay="2000">
             <div class="row">
               <div class="col-sm-12">
                 <img src="{{asset('images/arrow-right.png')}}" class="img-fluid" alt="">
@@ -138,9 +138,9 @@ Product
     <div class="row d-flex justify-content-center my-5">
       <div class="col-sm-9">
         <div class="obj-bottom-title-bg-2"></div>
-        <h1 class="text-pink text-custom2 obj-bottom-title-2 mb-5 text-right">VIT E</h1>
+        <h1 class="text-pink text-custom2 obj-bottom-title-2 mb-5 text-right">VIT - E</h1>
         <div class="row">
-          <div class="col-sm-3" data-aos="fade-down-left" data-aos-delay="1000">
+          <div class="col-sm-3" data-aos="fade-down-left" data-aos-delay="2000">
             <div class="row">
               <div class="col-sm-12">
                 <img src="{{asset('images/arrow-left.png')}}" width="130" class="img-fluid pull-right" alt="">
@@ -151,11 +151,11 @@ Product
             </div>
           </div>
           <!-- image -->
-          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="2000">
+          <div class="col-sm-6" data-aos="fade-up">
             <img src="{{asset('images/vit-e.png')}}" class="img-fluid" width="580" alt="primroses">
           </div>
           <!-- right -->
-          <div class="col-sm-3" data-aos="fade-down-right">
+          <div class="col-sm-3" data-aos="fade-down-right" data-aos-delay="1000">
             <div class="row">
               <div class="col-sm-12">
                 <img src="{{asset('images/arrow-right.png')}}" class="img-fluid" alt="">
@@ -174,7 +174,7 @@ Product
         <div class="obj-bottom-title-bg"></div>
         <h1 class="text-pink news-header-title text-custom2 mb-5">GAC Fruit</h1>
         <div class="row">
-          <div class="col-sm-3" data-aos="fade-down-left">
+          <div class="col-sm-3" data-aos="fade-down-left" data-aos-delay="1000">
             <div class="row">
               <div class="col-sm-12">
                 <img src="{{asset('images/arrow-left.png')}}" width="130" class="img-fluid pull-right" alt="">
@@ -186,11 +186,11 @@ Product
             </div>
           </div>
           <!-- image -->
-          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="2000">
+          <div class="col-sm-6" data-aos="fade-up">
             <img src="{{asset('images/gac-fruit-2.png')}}" class="img-fluid" width="580" alt="primroses">
           </div>
           <!-- right -->
-          <div class="col-sm-3" data-aos="fade-down-right" data-aos-delay="1000">
+          <div class="col-sm-3" data-aos="fade-down-right" data-aos-delay="2000">
             <div class="row">
               <div class="col-sm-12">
                 <img src="{{asset('images/arrow-right.png')}}" data-aos="fade-down-right" class="img-fluid" alt="">
@@ -322,7 +322,7 @@ Product
 
   <section id="video" class="container-fluid py-5 my-5">
     <div class="embed-responsive embed-responsive-21by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bus0q6JDyBQ" allowfullscreen></iframe>
     </div>
   </section>
 </div>

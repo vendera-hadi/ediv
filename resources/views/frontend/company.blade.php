@@ -6,19 +6,19 @@ PT. Meiji Indonesia
 
 @section('content')
 <div id="app">
-  <section id="company" class="container-fluid company-bg">
+  <section id="company" class="container-fluid article-bg">
     <!-- slider -->
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-sm-11">
           <my-carousel :images='{!! $sliders !!}'/>
         </div>
-        <div class="company-leaf-left">
+        <!-- <div class="company-leaf-left">
           <img src="{{asset('images/leaf-left.png')}}" width="150" alt="">
         </div>
         <div class="company-leaf-right">
           <img src="{{asset('images/leaf-right.png')}}" width="150" alt="">
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- slider -->
@@ -39,7 +39,7 @@ PT. Meiji Indonesia
     </div>
     <!-- box -->
   </section>
-  
+
   <section id="video" class="container-fluid py-5 my-5">
     <div class="embed-responsive embed-responsive-21by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
