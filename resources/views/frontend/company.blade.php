@@ -42,7 +42,7 @@ PT. Meiji Indonesia
 
   <section id="video" class="container-fluid py-5 my-5">
     <div class="embed-responsive embed-responsive-21by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bus0q6JDyBQ" allowfullscreen></iframe>
     </div>
   </section>
 </div>
