@@ -69,7 +69,7 @@ Product
       </div>
       <!-- right -->
       <div class="col-sm-6">
-        <div class="obj-middle-1 mt-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="500">
+        <div class="obj-middle-1 mt-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-delay="500">
           <img src="{{asset('images/ediva_young2.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
         </div>
         <div class="obj-middle-2" data-aos="fade-down-left" data-aos-delay="1000">

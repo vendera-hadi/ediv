@@ -21,13 +21,13 @@ Frequently Asked Questions
             <div class="card my-2">
               <div class="card-header" id="heading{{$key}}">
                 <h5 class="mb-0">
-                  <button class="btn btn-link {{ $key == 0 ? '' : 'collapsed' }}" data-toggle="collapse" data-target="#collapse{{$key}}" aria-expanded="{{ $key == 0 ? 'true' : 'false' }}" aria-controls="collapse{{$key}}">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{$key}}" aria-expanded="false" aria-controls="collapse{{$key}}">
                     {{$faq->title}}
                   </button>
                 </h5>
               </div>
 
-              <div id="collapse{{$key}}" class="collapse {{ $key == 0 ? 'show' : '' }}" aria-labelledby="heading{{$key}}" data-parent="#accordion">
+              <div id="collapse{{$key}}" class="collapse" aria-labelledby="heading{{$key}}" data-parent="#accordion">
                 <div class="card-body">
                   {{$faq->description}}
                 </div>

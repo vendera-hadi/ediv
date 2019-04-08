@@ -15,7 +15,7 @@
   <div class="container foreground">
     <div class="row">
       <div class="col-sm-12">
-        <center><img src="{{asset($post->image)}}" class="img-fluid img-thumbnail" alt=">{{$post->title}}"></center>
+        <center><img src="{{asset($post->image)}}" class="img-fluid img-article" alt="{{$post->title}}"></center>
       </div>
       <div class="col-sm-12 my-5">
         <div class="bs-component">

@@ -67,10 +67,10 @@ Home
 
       <div class="row d-flex justify-content-center title-group-1">
         <div class="col-sm-6">
-          <h1 class="text-red text-custom text-right" style="padding-right: 80px">Gac Fruit</h1>
+          <h1 class="text-red text-custom text-right" style="padding-right: 80px"><span>Gac Fruit</span></h1>
         </div>
         <div class="col-sm-6">
-          <h1 class="text-orange text-custom" style="padding-left: 80px;">Royal Jelly</h1>
+          <h1 class="text-orange text-custom"><span>Royal Jelly</span></h1>
         </div>
       </div>
 
@@ -95,30 +95,30 @@ Home
 
       <div class="home-jelly-desc-1">
         <div class="row" data-aos="fade-down-left">
-          <div class="col-sm-12">
+          <div class="col-sm-6 offset-sm-3">
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Asam Amino</h5>
+            <h5 class="text-brown font-weight-bold w-100 my-3 brush2" style="padding: 30px 60px;">Asam Amino</h5>
           </div>
         </div>
       </div>
 
       <div class="home-jelly-desc-2">
         <div class="row" data-aos="fade-down-right">
-          <div class="col-sm-12">
+          <div class="col-sm-6 offset-sm-1">
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3" style="font-size: medium">Vitamin B Complex</h5>
+            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="font-size: medium; padding: 29px 77px;">Vitamin B Complex</h5>
           </div>
         </div>
       </div>
 
       <div class="home-jelly-desc-3">
         <div class="row" data-aos="fade-down-right">
-          <div class="col-sm-6 offset-sm-6">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Enzim</h5>
+          <div class="col-sm-6">
+            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="padding: 12px 87px;">Enzim</h5>
           </div>
           <div class="col-sm-12">
             <img src="{{asset('images/arrow-up-2.png')}}" width="110" class="img-fluid" alt="">
@@ -135,11 +135,11 @@ Home
 
       <div class="home-fruit-desc-1">
         <div class="row" data-aos="fade-down-left" data-aos-delay="1000">
-          <div class="col-sm-12">
+          <div class="col-sm-6 offset-sm-3">
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Mengandung Likopen</h5>
+            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="padding: 24px 61px;">Mengandung Likopen</h5>
           </div>
         </div>
       </div>
@@ -150,7 +150,7 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Mengandung ekstrak karotenoid</h5>
+            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="padding: 50px 71px;">Mengandung ekstrak karotenoid</h5>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@ Home
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Omega 6 Fatty Acid</h5>
+            <h5 class="text-brown font-weight-bold w-100 my-3 brush5" style="padding: 17px 44px;">Omega 6 Fatty Acid</h5>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3">Asam Gamma-linolenic</h5>
+            <h5 class="text-brown font-weight-bold w-100 my-3 brush5" style="padding: 19px 43px;">Asam Gamma-linolenic</h5>
           </div>
         </div>
       </div>

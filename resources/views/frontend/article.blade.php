@@ -19,11 +19,11 @@ Articles
   <section id="article-list" class="container-fluid">
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-sm-9 article-list-box">
+        <div class="col-sm-9 article-list-box py-5">
           <div class="row">
             <!-- news -->
             @foreach($posts as $key => $post)
-            <div class="col-sm-6 article-box-{{$key%2==0 ? 'even' : 'odd'}}">
+            <div class="col-sm-6 my-3">
               <div class="card">
                 <a href="{{route('article_detail', ['slug' => $post->slug])}}" title="{{$post->title}}">
                   <img class="card-img-top img-fluid fit-image-small" src="{{asset($post->image)}}" alt="{{$post->title}}">
