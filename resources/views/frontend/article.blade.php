@@ -29,9 +29,9 @@ Articles
                   <img class="card-img-top img-fluid fit-image-small" src="{{asset($post->image)}}" alt="{{$post->title}}">
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title">{{$post->title}}</h5>
-                  <p class="card-text">{{Str::limit(strip_tags($post->description), 100)}}</p>
-                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-brown text-white font-weight-bold btn-rounded pull-right px-3 py-2">Read More</a>
+                  <h5 class="card-title text-custom3 font-weight-bold">{{$post->title}}</h5>
+                  <p class="card-text text-custom3">{{Str::limit(strip_tags($post->description), 100)}}</p>
+                  <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-brown text-custom3 text-white font-weight-bold btn-rounded pull-right px-3 py-2">Read More</a>
                 </div>
               </div>
             </div>

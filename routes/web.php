@@ -54,6 +54,9 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
   Route::get('/faq/{id}/edit', 'AdminController@faq_edit')->name('faq.edit');
   Route::post('/faq/{id}', 'AdminController@faq_update')->name('faq.update');
   Route::post('/faq/{id}/delete', 'AdminController@faq_destroy')->name('faq.destroy');
+
+  Route::get('/web-content', 'AdminController@content')->name('content.index');
+  Route::post('/web-content', 'AdminController@doContent')->name('content.update');
 });
 
 Auth::routes();

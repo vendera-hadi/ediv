@@ -36,6 +36,17 @@ body {
   font-family: "brownhill";
 }
 
+@font-face{
+  src: url(../../public/fonts/Quicksand-Regular.ttf);
+  font-family: "quicksand";
+}
+
+@font-face {
+  src: url(../../public/fonts/Quicksand-Bold.ttf);
+  font-family: "quicksand";
+  font-weight: bold;
+}
+
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,
@@ -99,6 +110,10 @@ input[type=number]:focus,
 
   &-custom2 {
     font-family: 'brownhill', cursive;
+  }
+
+  &-custom3 {
+    font-family: 'quicksand', cursive;
   }
 }
 
@@ -287,7 +302,7 @@ input[type=number]:focus,
 }
 
 .why-container {
-  padding-top: 8rem;
+  padding-top: 3rem;
 }
 
 .why {
@@ -305,6 +320,13 @@ input[type=number]:focus,
     background-size: contain;
     height: 486px;
     padding-top: 75px;
+  }
+
+  &-bg1{
+    background-color: #ffebea;
+  }
+  &-bg2{
+    background-color: #ecf9ff;
   }
 }
 

@@ -12,25 +12,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto ml-5">
             <li class="px-2 nav-item {{Route::currentRouteName() == 'home' ? 'active' : ''}}">
-              <a class="nav-link" href="{{route('home')}}">Home</a>
+              <a class="nav-link" href="{{route('home')}}">Beranda</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'product' ? 'active' : ''}}">
-              <a class="nav-link" href="{{route('product')}}">Product</a>
+              <a class="nav-link" href="{{route('product')}}">Produk</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'article' ? 'active' : ''}}">
-              <a class="nav-link" href="{{route('article')}}">Article</a>
+              <a class="nav-link" href="{{route('article')}}">Artikel</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'company' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('company')}}">PT Meiji Indonesia</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'news-event' ? 'active' : ''}}">
-              <a class="nav-link" href="{{route('news-event')}}">News & Event</a>
+              <a class="nav-link" href="{{route('news-event')}}">Berita & Acara</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'faq' ? 'active' : ''}}">
               <a class="nav-link" href="{{route('faq')}}">FAQ</a>
             </li>
             <li class="px-2 nav-item {{Route::currentRouteName() == 'contact' ? 'active' : ''}}">
-              <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
+              <a class="nav-link" href="{{route('contact')}}">Hubungi Kami</a>
             </li>
           </ul>
         </div>

@@ -13,6 +13,7 @@ Frequently Asked Questions
   </div>
   <div class="row d-flex justify-content-center faq-decor-bg">
     <div class="col-sm-12">
+      <h1 class="text-red text-center text-custom3 font-weight-bold mt-5">FAQ</h1>
       <!-- accordion -->
       <div class="row d-flex justify-content-center my-5">
         <div class="col-sm-9">
@@ -20,7 +21,7 @@ Frequently Asked Questions
             @foreach($faqs as $key => $faq)
             <div class="card my-2">
               <div class="card-header" id="heading{{$key}}">
-                <h5 class="mb-0">
+                <h5 class="mb-0 font-weight-bold text-custom3">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{$key}}" aria-expanded="false" aria-controls="collapse{{$key}}">
                     {{$faq->title}}
                   </button>
@@ -28,7 +29,7 @@ Frequently Asked Questions
               </div>
 
               <div id="collapse{{$key}}" class="collapse" aria-labelledby="heading{{$key}}" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body text-custom3">
                   {{$faq->description}}
                 </div>
               </div>

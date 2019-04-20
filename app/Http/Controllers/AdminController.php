@@ -8,6 +8,7 @@ use App\Models\Newsletter;
 use App\Models\Post;
 use App\Models\ContactLog;
 use App\Models\Faq;
+use App\Models\Content;
 use App\Exports\NewsletterExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Auth;
@@ -230,4 +231,24 @@ class AdminController extends Controller
       $faq->delete();
       return redirect('admin/faq')->with('success', 'Delete Success');
     }
+
+    public function content()
+    {
+        $data['contents'] = Content::all();
+        $data['textarea_filter'] = ['company.description', 'contact.address'];
+        return view('backend.content_form', $data);
+    }
+
+    public function doContent(Request $request)
+    {
+        foreach ($request->key as $key => $val) {
+          $content = Content::where('key', $val)->first();
+          if(!empty($content)){
+            $content->value = $request->value[$key];
+            $content->save();
+          }
+        }
+        return redirect()->back()->with('success', 'Update Success');
+    }
+
 }

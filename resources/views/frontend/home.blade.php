@@ -23,13 +23,13 @@ Home
         </div>
         <div class="col-sm-4" data-aos="fade-left" data-aos-delay="1000">
           <h1 class="text-gray text-custom">Ediva Pure</h1>
-          <p class="text-gray">Suplemen alami untuk menyeimbangkan masalah hormon dalam tubuh dan juga membantu meringankan gejala pre-menstruasi</p>
+          <p class="text-gray text-custom3">Suplemen alami untuk membantu meringankan gejala pra-menstruasi.</p>
         </div>
       </div>
       <div class="row d-flex justify-content-center mt-5">
         <div class="col-sm-4" data-aos="fade-right" data-aos-delay="1000">
           <h1 class="text-gray text-custom">Ediva Young</h1>
-          <p class="text-gray">Suplemen alami yang dapat memelihara juga membantu mengurangi berbagai permasalahan yang timbul pada kulit</p>
+          <p class="text-gray text-custom3">Suplemen alami untuk membantu memelihara kesehatan kulit.</p>
         </div>
         <div class="col-sm-6" data-aos="fade-left">
           <img src="{{asset('images/ediva_young2.png')}}" class="img-fluid" alt="">
@@ -42,7 +42,7 @@ Home
         <div class="col-sm-12 text-center">
           <h1 class="text-light-gray text-custom my-3">Ediva Pure</h1>
           <img src="{{asset('images/ediva_pure.png')}}" class="img-fluid my-3" alt="">
-          <p class="text-gray my-3">Suplemen alami untuk menyeimbangkan masalah hormon dalam tubuh dan juga membantu meringankan gejala pre-menstruasi</p>
+          <p class="text-gray my-3 text-custom3">Suplemen alami untuk membantu meringankan gejala pra-menstruasi.</p>
         </div>
       </div>
 
@@ -50,7 +50,7 @@ Home
         <div class="col-sm-12 text-center">
           <h1 class="text-light-gray text-custom my-3">Ediva Young</h1>
           <img src="{{asset('images/ediva_young2.png')}}" class="img-fluid my-3" alt="">
-          <p class="text-gray my-3">Suplemen alami yang dapat memelihara juga membantu mengurangi berbagai permasalahan yang timbul pada kulit</p>
+          <p class="text-gray my-3 text-custom3">Suplemen alami untuk membantu memelihara kesehatan kulit.</p>
         </div>
       </div>
     </section>
@@ -58,10 +58,10 @@ Home
     <section id="animate-desc" class="container-fluid py-5 my-5">
       <div class="row d-flex justify-content-center" data-aos="fade-up">
         <div class="col-sm-11">
-          <h1 class="text-brown text-center">kebaikan alami untuk para wanita indonesia</h1>
+          <h1 class="text-brown text-center text-custom3 font-weight-bold">kebaikan alami untuk para wanita indonesia</h1>
         </div>
         <div class="col-sm-5 mt-3">
-          <p class="text-brown text-center">Bahan alami yang terkandung dalam Ediva memiliki berbagai manfaat yang mampu menjaga dan merawat tubuh dari dalam</p>
+          <p class="text-brown text-center text-custom3">Bahan alami yang terkandung dalam Ediva memiliki berbagai manfaat yang mampu menjaga dan merawat tubuh dari dalam</p>
         </div>
       </div>
 
@@ -99,7 +99,7 @@ Home
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3 brush2" style="padding: 30px 60px;">Asam Amino</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush2" style="padding: 30px 60px;">Asam Amino</h5>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="font-size: medium; padding: 29px 77px;">Vitamin B Complex</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush3" style="font-size: medium; padding: 29px 77px;">Vitamin B Complex</h5>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@ Home
       <div class="home-jelly-desc-3">
         <div class="row" data-aos="fade-down-right">
           <div class="col-sm-6">
-            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="padding: 12px 87px;">Enzim</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush3" style="padding: 12px 87px;">Enzim</h5>
           </div>
           <div class="col-sm-12">
             <img src="{{asset('images/arrow-up-2.png')}}" width="110" class="img-fluid" alt="">
@@ -139,7 +139,7 @@ Home
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="padding: 24px 61px;">Mengandung Likopen</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush3" style="padding: 24px 61px;">Mengandung Likopen</h5>
           </div>
         </div>
       </div>
@@ -150,7 +150,7 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3 brush3" style="padding: 50px 71px;">Mengandung ekstrak karotenoid</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush3" style="padding: 50px 71px;">Mengandung ekstrak karotenoid</h5>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@ Home
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3 brush5" style="padding: 17px 44px;">Omega 6 Fatty Acid</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush5" style="padding: 17px 44px;">Omega 6 Fatty Acid</h5>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown font-weight-bold w-100 my-3 brush5" style="padding: 19px 43px;">Asam Gamma-linolenic</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush5" style="padding: 19px 43px;">Asam Gamma-linolenic</h5>
           </div>
         </div>
       </div>
@@ -186,12 +186,12 @@ Home
           <img src="{{asset('images/primroses.png')}}" class="img-fluid my-3" width="580" alt="primroses">
         </div>
         <div class="col-sm-12 text-center">
-          <h3 class="text-brown font-weight-bold my-3">Omega 6 Fatty Acid</h5>
-          <p>Bermanfaat untuk memaksimalkan proses metabolisme dan membantu mengoptimalkan proses regenerasi kulit dari dalam tubuh</p>
+          <h3 class="text-brown text-custom3 font-weight-bold my-3">Omega 6 Fatty Acid</h5>
+          <p class="text-custom3">Bermanfaat untuk memaksimalkan proses metabolisme dan membantu mengoptimalkan proses regenerasi kulit dari dalam tubuh</p>
         </div>
         <div class="col-sm-12 text-center">
-          <h3 class="text-brown font-weight-bold my-3">Asam Gamma-linolenic</h5>
-          <p>Berperan penting mengatasi masalah radang/inflamasi, terutama pada penyakit kulit</p>
+          <h3 class="text-brown text-custom3 font-weight-bold my-3">Asam Gamma-linolenic</h5>
+          <p class="text-custom3">Berperan penting mengatasi masalah radang/inflamasi, terutama pada penyakit kulit</p>
         </div>
       </div>
 
@@ -201,10 +201,10 @@ Home
           <center><img src="{{asset('images/vit-e.png')}}" class="img-fluid my-3" alt="primroses" width="220"></center>
         </div>
         <div class="col-sm-12 text-center">
-          <p class="my-3">Mendorong produksi kolagen yang berfungsi mengurangi jumlah garis halus dan tanda-tanda penuaan.</p>
+          <p class="my-3 text-custom3">Mendorong produksi kolagen yang berfungsi mengurangi jumlah garis halus dan tanda-tanda penuaan.</p>
         </div>
         <div class="col-sm-12 text-center">
-          <p class="my-3">Melancarkan sirkulasi darah dan menurunkan indikasi terjadinya sindrom pramenstruasi.</p>
+          <p class="my-3 text-custom3">Melancarkan sirkulasi darah dan menurunkan indikasi terjadinya sindrom pramenstruasi.</p>
         </div>
       </div>
 
@@ -214,12 +214,12 @@ Home
           <img src="{{asset('images/gac-fruit-2.png')}}" class="img-fluid" width="580" alt="primroses">
         </div>
         <div class="col-sm-12 text-center">
-          <h3 class="text-brown font-weight-bold my-3">Tinggi Kandungan Betacarotine</h5>
-          <p>Membantu Melancarkan aliran darah dan meminimalisir rasa sakit saat premenstruasi.</p>
+          <h3 class="text-brown text-custom3 font-weight-bold my-3">Tinggi Kandungan Betacarotine</h5>
+          <p class="text-custom3">Membantu Melancarkan aliran darah dan meminimalisir rasa sakit saat premenstruasi.</p>
         </div>
         <div class="col-sm-12 text-center">
-          <h3 class="text-brown font-weight-bold my-3">Lycopene 16 X dari Buah Tomat</h5>
-          <p>Mengandung antioksidan yang melimpah untuk meningkatkan sistem kekebalan tubuh.</p>
+          <h3 class="text-brown text-custom3 font-weight-bold my-3">Tinggi Kandungan Lycopene</h5>
+          <p class="text-custom3">Lycopene mengandung antioksidan yang melimpah untuk meningkatkan sistem kekebalan tubuh.</p>
         </div>
       </div>
 
@@ -229,16 +229,16 @@ Home
           <img src="{{asset('images/royal-jelly.png')}}" class="img-fluid" width="580" alt="primroses">
         </div>
         <div class="col-sm-12 text-center">
-          <h3 class="text-brown font-weight-bold my-3">Asam Amino</h5>
-          <p>Membentuk antibodi tubuh untuk menjaga tubuh dari zat asing yang masuk ke dalam tubuh.</p>
+          <h3 class="text-brown text-custom3 font-weight-bold my-3">Asam Amino</h5>
+          <p class="text-custom3">Membentuk antibodi tubuh untuk menjaga tubuh dari zat asing yang masuk ke dalam tubuh.</p>
         </div>
         <div class="col-sm-12 text-center">
-          <h3 class="text-brown font-weight-bold my-3">Vitamin B Complex</h5>
-          <p>Mengoptimalkan produksi energi dan mengoptimalkan penyerapan nutrisi.</p>
+          <h3 class="text-brown text-custom3 font-weight-bold my-3">Vitamin B Complex</h5>
+          <p class="text-custom3">Mengoptimalkan produksi energi dan mengoptimalkan penyerapan nutrisi.</p>
         </div>
         <div class="col-sm-12 text-center">
-          <h3 class="text-brown font-weight-bold my-3">Protein</h5>
-          <p>Berperan meningkatkan sistem imun dan membangun sel, serta jaringan dalam tubuh.</p>
+          <h3 class="text-brown text-custom3 font-weight-bold my-3">Protein</h5>
+          <p class="text-custom3">Berperan meningkatkan sistem imun dan membangun sel, serta jaringan dalam tubuh.</p>
         </div>
       </div>
     </section>
@@ -246,24 +246,28 @@ Home
     <section id="why-ediva" class="container-fluid py-5 my-5">
       <div class="row d-flex justify-content-center">
         <div class="col-sm-11">
-          <h1 class="text-brown text-center text-gray font-weight-bold">Kenapa Ediva ?</h1>
+          <h1 class="text-custom text-red text-brown text-center text-gray" style="font-size: 85px">Kenapa Ediva ?</h1>
         </div>
       </div>
       <div class="container">
         <div class="row d-flex justify-content-center why-container">
         <div class="col-sm-6">
-          <div class="row why-1 d-flex flex-row-reverse">
-            <div class="col-sm-6 px-4">
-              <h1 class="text-red font-weight-bold">Ediva Pure</h3>
-              <p>Kombinasi Vit E, Evening Primrose Oil, dan buah Gac dapat menjadi anti-inflamasi yang mengurangi nyeri pre menstruasi dan meningkatkan level antioksidan yang menurun saat haid. Sehingga membebaskan kamu dari rasa khawatir saat datang bulan.</p>
+          <div class="row d-flex justify-content-center">
+            <div class="col-sm-10 p-5 why-bg1">
+              <center><img src="{{asset('images/logo_ediva_pure.png')}}" width="250" class="img-responsive"></center>
+              <p class="text-custom3 mt-5">
+                Kandungan alami dalam setiap kapsul EDIVA Pure memberikan manfaat untuk membantu meringankan gejala pra-mentruasi, sehingga membebaskan kamu dari rasa khawatir saat datang bulan.
+              </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 mt-5">
-          <div class="row why-2 d-flex flex-row-reverse">
-            <div class="col-sm-6 px-4">
-              <h1 class="text-primary font-weight-bold">Ediva Young</h3>
-              <p>Kandungan alami dalam setiap kapsul Ediva Young memberikan manfaat untuk memberikan kolagen pada lapisan dalam kulit (dermis), sehingga proses regenerasi sel kulit akan tetap terjaga. Membuat kulit menjadi jauh lebih elastis, sehat dan tampak cerah.</p>
+          <div class="row d-flex justify-content-center">
+            <div class="col-sm-10 p-5 why-bg2">
+              <center><img src="{{asset('images/logo_ediva_young.png')}}" width="250" class="img-responsive"></center>
+              <p class="text-custom3 mt-5">
+                Kandungan alami dalam setiap kapsul EDIVA Young memberikan manfaat untuk membantu memelihara kesehatan kulit, sehingga kulit menjadi lebih elastis dan sehat.
+              </p>
             </div>
           </div>
         </div>

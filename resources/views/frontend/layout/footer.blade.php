@@ -1,11 +1,7 @@
 <div class="footer-box container-fluid mt-5 py-5 text-center">
   <img src="{{asset('images/logo.png')}}" title="meiji ediva" alt="">
   <!-- short desc -->
-  <div class="row d-flex justify-content-center mt-3">
-    <div class="col-md-6">
-      <p class="text-brown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
+  
   <!-- sitemap -->
   <div id="sitemap" class="row d-flex justify-content-center mt-3">
     <ul class="col-sm-6 d-flex flex-md-row flex-column justify-content-center text-md-left">

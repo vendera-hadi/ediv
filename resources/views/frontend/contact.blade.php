@@ -7,7 +7,7 @@ Contact Us
 @section('content')
 <div id="app">
   <section id="contact" class="container-fluid">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center" style="background: white;">
       <div class="col-sm-10 contact-box">
         <!-- contact box -->
         <div class="row d-flex justify-content-center">
@@ -54,24 +54,23 @@ Contact Us
           <div class="col-sm-4 bg-pink contact-box-shadow p-5">
             <h1 class="text-custom text-brown">Contact Us</h1>
             <p class="text-brown">
-              PT. Meiji Indonesia<br>
-              Jl. Tanah Abang II No.4, Jakarta Pusat, Indonesia
+              {!! !empty($address->value) ? $address->value : "" !!}
             </p>
             <table class="text-brown">
               <tr>
                 <td><img src="{{asset('images/icon-phone.png')}}" width="27"></td>
                 <td width="40" class="text-right">:</td>
-                <td>(62-21) 384 5584</td>
+                <td>{!! !empty($phone->value) ? $phone->value : "" !!}</td>
               </tr>
               <tr>
                 <td><img src="{{asset('images/icon-fax.png')}}" width="27"></td>
                 <td class="text-right">:</td>
-                <td>(62-21) 345 7650</td>
+                <td>{!! !empty($fax->value) ? $fax->value : "" !!}</td>
               </tr>
               <tr>
                 <td><img src="{{asset('images/icon-email.png')}}" width="27"></td>
                 <td class="text-right">:</td>
-                <td>adm@meiji.co.id</td>
+                <td>{!! !empty($email->value) ? $email->value : "" !!}</td>
               </tr>
             </table>
           </div>

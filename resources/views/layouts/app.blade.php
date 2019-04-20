@@ -30,6 +30,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                @guest
+                @else
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav m-auto">
@@ -54,7 +56,11 @@
                       <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.faq.index' ? 'font-weight-bold' : ''}}">
                         <a class="nav-link" href="{{route('admin.faq.index')}}">FAQ</a>
                       </li>
+                      <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.content.index' ? 'font-weight-bold' : ''}}">
+                        <a class="nav-link" href="{{route('admin.content.index')}}">Web Content</a>
+                      </li>
                     </ul>
+                    @endguest
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

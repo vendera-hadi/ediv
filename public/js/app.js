@@ -36879,9 +36879,13 @@ var render = function() {
         _vm._v(" "),
         image.title
           ? _c("div", { staticClass: "slider-overlay text-left text-white" }, [
-              _c("h2", [_vm._v(_vm._s(image.title))]),
+              _c("h2", { staticClass: "text-custom3" }, [
+                _vm._v(_vm._s(image.title))
+              ]),
               _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(image.desc))])
+              _c("p", { staticClass: "text-custom3" }, [
+                _vm._v(_vm._s(image.desc))
+              ])
             ])
           : _vm._e()
       ])

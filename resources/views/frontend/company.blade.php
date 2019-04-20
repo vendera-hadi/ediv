@@ -26,10 +26,9 @@ PT. Meiji Indonesia
     <div class="container mt-5">
       <div class="row d-flex justify-content-center">
         <div class="col-sm-11 contact-box-shadow p-5 company-box">
-          <div class="content text-center">
-            <h1 class="text-brown">PT. Meiji Indonesia</h1>
-            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="content text-center text-custom3">
+            <h1 class="text-brown font-weight-bold mb-5">{!! !empty($title->value) ? $title->value : "" !!}</h1>
+            {!! !empty($description->value) ? $description->value : "" !!}
           </div>
           <div class="company-flower-right" style="z-index: 1">
             <img src="{{asset('images/company-box-right.png')}}" width="189" alt="">

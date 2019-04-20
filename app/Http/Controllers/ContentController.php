@@ -8,6 +8,7 @@ use App\Models\Newsletter;
 use App\Models\Post;
 use App\Models\ContactLog;
 use App\Models\Faq;
+use App\Models\Content;
 use App\Mail\ContactMail;
 
 class ContentController extends Controller
@@ -21,7 +22,11 @@ class ContentController extends Controller
 
     public function contact()
     {
-        return view('frontend.contact', []);
+        $data['address'] = Content::where('key','contact.address')->first();
+        $data['phone'] = Content::where('key','contact.phone')->first();
+        $data['fax'] = Content::where('key','contact.fax')->first();
+        $data['email'] = Content::where('key','contact.email')->first();
+        return view('frontend.contact', $data);
     }
 
     public function docontact(Request $request)
@@ -60,6 +65,8 @@ class ContentController extends Controller
     public function company()
     {
       $data['sliders'] = Slider::company()->get();
+      $data['title'] = Content::where('key','company.title')->first();
+      $data['description'] = Content::where('key','company.description')->first();
       return view('frontend.company', $data);
     }
 

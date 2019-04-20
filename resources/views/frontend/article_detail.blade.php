@@ -7,7 +7,7 @@
 @section('content')
 <div class="container-fluid">
   <div class="jumbotron bg-brown text-center">
-    <h1>{{$post->title}}</h1>
+    <h1 class="text-custom3 font-weight-bold">{{$post->title}}</h1>
   </div>
 </div>
 
@@ -19,7 +19,7 @@
       </div>
       <div class="col-sm-12 my-5">
         <div class="bs-component">
-          <article>
+          <article class="text-custom3">
             {!! $post->description !!}
           </article>
         </div>

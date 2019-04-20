@@ -13732,6 +13732,17 @@ body {
   font-family: "brownhill";
 }
 
+@font-face {
+  src: url(/fonts/Quicksand-Regular.ttf?678b12a6a938c32eb5fa88f2f439c2df);
+  font-family: "quicksand";
+}
+
+@font-face {
+  src: url(/fonts/Quicksand-Bold.ttf?809cd8ab97c465b57cb1a44b1795f12c);
+  font-family: "quicksand";
+  font-weight: bold;
+}
+
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,
@@ -13795,6 +13806,10 @@ input[type=number]:focus,
 
 .text-custom2 {
   font-family: "brownhill", cursive;
+}
+
+.text-custom3 {
+  font-family: "quicksand", cursive;
 }
 
 .border-brown {
@@ -13977,7 +13992,7 @@ input[type=number]:focus,
 }
 
 .why-container {
-  padding-top: 8rem;
+  padding-top: 3rem;
 }
 
 .why-1 {
@@ -13994,6 +14009,14 @@ input[type=number]:focus,
   background-size: contain;
   height: 486px;
   padding-top: 75px;
+}
+
+.why-bg1 {
+  background-color: #ffebea;
+}
+
+.why-bg2 {
+  background-color: #ecf9ff;
 }
 
 .home-slider-bg {
