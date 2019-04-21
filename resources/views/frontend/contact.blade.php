@@ -52,7 +52,7 @@ Contact Us
             </form>
           </div>
           <div class="col-sm-4 bg-pink contact-box-shadow p-5">
-            <h1 class="text-custom text-brown">Contact Us</h1>
+            <h1 class="text-custom text-brown">Hubungi Kami</h1>
             <p class="text-brown">
               {!! !empty($address->value) ? $address->value : "" !!}
             </p>
