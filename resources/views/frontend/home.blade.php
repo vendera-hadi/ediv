@@ -22,14 +22,14 @@ Home
           <img src="{{asset('images/ediva_pure.png')}}" class="img-fluid" alt="">
         </div>
         <div class="col-sm-4" data-aos="fade-left" data-aos-delay="1000">
-          <img src="{{asset('images/logo_ediva_pure.png')}}" width="250" class="img-responsive mb-5">
+          <img src="{{asset('images/logo_ediva_pure.png')}}" width="200" class="img-responsive mb-5">
           <!-- <h1 class="text-gray text-custom">Ediva Pure</h1> -->
           <p class="text-gray text-custom3">Suplemen alami untuk membantu meringankan gejala pra-menstruasi.</p>
         </div>
       </div>
       <div class="row d-flex justify-content-center mt-5">
         <div class="col-sm-4" data-aos="fade-right" data-aos-delay="1000">
-          <img src="{{asset('images/logo_ediva_young.png')}}" width="250" class="img-responsive mb-5">
+          <img src="{{asset('images/logo_ediva_young.png')}}" width="200" class="img-responsive mb-5">
           <!-- <h1 class="text-gray text-custom">Ediva Young</h1> -->
           <p class="text-gray text-custom3">Suplemen alami untuk membantu memelihara kesehatan kulit.</p>
         </div>
@@ -42,16 +42,16 @@ Home
     <section id="product-mobile" class="container my-5 home-product-container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <img src="{{asset('images/logo_ediva_pure.png')}}" width="250" class="img-responsive">
+          <img src="{{asset('images/logo_ediva_pure.png')}}" width="200" class="img-responsive mb-3">
           <!-- <h1 class="text-light-gray text-custom my-3">Ediva Pure</h1> -->
           <img src="{{asset('images/ediva_pure.png')}}" class="img-fluid my-3" alt="">
           <p class="text-gray my-3 text-custom3">Suplemen alami untuk membantu meringankan gejala pra-menstruasi.</p>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-sm-12 text-center">
-          <img src="{{asset('images/logo_ediva_young.png')}}" width="250" class="img-responsive">
+          <img src="{{asset('images/logo_ediva_young.png')}}" width="200" class="img-responsive mb-3">
           <!-- <h1 class="text-light-gray text-custom my-3">Ediva Young</h1> -->
           <img src="{{asset('images/ediva_young2.png')}}" class="img-fluid my-3" alt="">
           <p class="text-gray my-3 text-custom3">Suplemen alami untuk membantu memelihara kesehatan kulit.</p>

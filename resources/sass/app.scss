@@ -339,9 +339,10 @@ input[type=number]:focus,
   }
 
   &-product-container {
-    background-image:url(/images/article-list-box-bg.png);
+    background-image:url(/images/article-list-box-bg2.png);
     background-size: cover;
     background-repeat: repeat-y;
+    background-position-y: -44px;
   }
 
   &-jelly {
@@ -591,6 +592,13 @@ input[type=number]:focus,
 
   &-header-title {
     font-size: 70px;
+  }
+
+  &-subtitle {
+    display: block;
+    &-mobile {
+      display: none;
+    }
   }
 }
 
@@ -1067,6 +1075,15 @@ input[type=number]:focus,
   .home {
     &-slider-bg {
       min-height: 200px;
+    }
+  }
+
+  .news {
+    &-subtitle {
+      display: none !important;
+      &-mobile {
+        display: block;
+      }
     }
   }
 

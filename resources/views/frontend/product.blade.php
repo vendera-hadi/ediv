@@ -22,12 +22,12 @@ Product
         <img src="{{asset('images/logo_ediva_pure.png')}}" width="200" class="img-responsive obj-top-bounce"><br>
         <!-- <h1 class="text-custom text-gray news-header-title obj-top-bounce">Ediva Pure</h1> -->
         <div class="row d-flex justify-content-start mt-5 obj-top-desc-bg">
-          <div class="col-sm-3 obj-top-appear">
-            <img src="{{asset('images/pure-obj-1.png')}}" title="meringankan pre-menstruasi" class="img-fluid" alt="ediva pure">
+          <div class="col-sm-4 obj-top-appear">
+            <center><img src="{{asset('images/pure-obj-1.png')}}" width="115" title="meringankan pre-menstruasi" class="img-fluid" alt="ediva pure"></center>
             <p class="text-center my-3 text-custom3">Meringankan Gejala Pre-Menstruasi</p>
           </div>
-          <div class="col-sm-3 mx-5 obj-top-appear">
-            <img src="{{asset('images/pure-obj-2.png')}}" title="meningkatkan kekebalan tubuh" class="img-fluid" alt="ediva pure">
+          <div class="col-sm-4 mx-5 obj-top-appear">
+            <center><img src="{{asset('images/pure-obj-2.png')}}" width="115" title="meningkatkan kekebalan tubuh" class="img-fluid" alt="ediva pure"></center>
             <p class="text-center my-3 text-custom3">Meningkatkan Sistem Kekebalan Tubuh</p>
           </div>
         </div>
@@ -38,7 +38,7 @@ Product
   <section id="product-top-mobile" class="container">
     <div class="row">
       <div class="col-sm-12">
-        <img src="{{asset('images/logo_ediva_pure.png')}}" width="200">
+        <center><img src="{{asset('images/logo_ediva_pure.png')}}" width="200" class="mb-3"></center>
         <!-- <h1 class="text-custom text-gray text-center news-header-title my-3">Ediva Pure</h1> -->
         <img src="{{asset('images/ediva_pure.png')}}" title="Meiji Ediva Pure" width="650" class="img-fluid my-3" alt="">
       </div>
@@ -61,17 +61,17 @@ Product
         <div class="row d-flex justify-content-end mt-5 obj-middle-desc-bg">
           <div class="col-sm-12 mb-5" data-aos="zoom-out">
             <div class="row d-flex justify-content-end">
-              <div class="col-sm-8">
+              <div class="col-sm-9">
                 <img src="{{asset('images/logo_ediva_young.png')}}" width="200" class="img-responsive">
               </div>
             </div>
           </div>
-          <div class="col-sm-3" data-aos="zoom-out">
-            <img src="{{asset('images/young-obj-1.png')}}" title="meningkatkan produksi kolagen" class="img-fluid" alt="ediva young">
+          <div class="col-sm-4" data-aos="zoom-out">
+            <center><img src="{{asset('images/young-obj-1.png')}}" width="130" title="meningkatkan produksi kolagen" class="img-fluid" alt="ediva young"></center>
             <p class="text-center my-3 text-custom3">Meningkatkan Produksi Kolagen Pada Kulit</p>
           </div>
-          <div class="col-sm-3 mx-5" data-aos="zoom-out">
-            <img src="{{asset('images/young-obj-2.png')}}" width="88" title="membuat kulit menjadi lebih sehat dan elastis" class="img-fluid" alt="ediva young">
+          <div class="col-sm-4 mx-5" data-aos="zoom-out">
+            <center><img src="{{asset('images/young-obj-2.png')}}" width="88" title="membuat kulit menjadi lebih sehat dan elastis" class="img-fluid" alt="ediva young"></center>
             <p class="text-center my-3 text-custom3">Membuat Kulit Menjadi Lebih Sehat dan Elastis</p>
           </div>
         </div>
@@ -81,7 +81,7 @@ Product
         <div class="obj-middle-1 mt-5" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-delay="500">
           <img src="{{asset('images/ediva_young2.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
         </div>
-        <div class="obj-middle-2" data-aos="fade-down-left" data-aos-delay="1000">
+        <div class="obj-middle-2">
           <img src="{{asset('images/product-obj-2.png')}}" width="165" class="img-fluid my-3" alt="">
         </div>
       </div>
@@ -92,7 +92,7 @@ Product
   <section id="product-middle-mobile" class="container mt-5">
     <div class="row">
       <div class="col-sm-12">
-        <img src="{{asset('images/logo_ediva_young.png')}}" width="200">
+        <center><img src="{{asset('images/logo_ediva_young.png')}}" width="200" class="mb-3"></center>
         <!-- <h1 class="text-custom text-gray text-center news-header-title my-3">Ediva Young</h1> -->
         <img src="{{asset('images/ediva_young2.png')}}" title="Meiji Ediva Young" width="500" class="img-fluid my-3" alt="">
       </div>
@@ -120,8 +120,8 @@ Product
                 <img src="{{asset('images/arrow-left.png')}}" class="img-fluid pull-right" alt="">
               </div>
               <div class="col-sm-12">
-                <h3 class="text-brown text-custom3 font-weight-bold w-100 my-3">Omega 6<br>Fatty Acid</h5>
-                <p class="text-custom3">Bermanfaat untuk memaksimalkan proses metabolisme dan membantu mengoptimalkan proses regenerasi kulit dari dalam tubuh</p>
+                <h3 class="text-light-brown text-custom3 font-weight-bold w-100 my-3">Omega 6<br>Fatty Acid</h5>
+                <p class="text-custom3" style="position: absolute;width: 246px;left: -42px;text-align: justify;">Bermanfaat untuk memaksimalkan proses metabolisme dan membantu mengoptimalkan proses regenerasi kulit dari dalam tubuh</p>
               </div>
             </div>
           </div>
@@ -132,12 +132,12 @@ Product
           <!-- right -->
           <div class="col-sm-3" data-aos="fade-down-right" data-aos-delay="2000">
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-sm-8">
                 <img src="{{asset('images/arrow-right.png')}}" class="img-fluid" alt="">
               </div>
               <div class="col-sm-12">
-                <h3 class="text-brown text-custom3 font-weight-bold my-3">Asam Gamma-linolenic</h5>
-                <p class="text-custom3">Berperan penting mengatasi masalah radang/inflamasi, terutama pada penyakit kulit</p>
+                <h3 class="text-light-brown text-custom3 font-weight-bold my-3">Asam Gamma-linolenic</h5>
+                <p class="text-custom3" style="position: absolute;left: -20px;">Berperan penting mengatasi masalah radang/inflamasi, terutama pada penyakit kulit</p>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ Product
                 <img src="{{asset('images/arrow-left.png')}}" width="130" class="img-fluid pull-right" alt="">
               </div>
               <div class="col-sm-12">
-                <p class="my-3 text-custom3">Mendorong produksi kolagen yang berfungsi mengurangi jumlah garis halus dan tanda-tanda penuaan.</p>
+                <p class="my-3 text-custom3" style="position: absolute;width: 250px;">Mendorong produksi kolagen yang berfungsi mengurangi jumlah garis halus dan tanda-tanda penuaan.</p>
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@ Product
                 <img src="{{asset('images/arrow-right.png')}}" class="img-fluid" alt="">
               </div>
               <div class="col-sm-12">
-                <p class="my-3 text-right text-custom3">Melancarkan sirkulasi darah dan menurunkan indikasi terjadinya sindrom pramenstruasi.</p>
+                <p class="my-3 text-custom3" style="position: absolute;width: 250px;left: 86px;">Melancarkan sirkulasi darah dan menurunkan indikasi terjadinya sindrom pramenstruasi.</p>
               </div>
             </div>
           </div>
@@ -190,8 +190,8 @@ Product
                 <img src="{{asset('images/arrow-left.png')}}" width="130" class="img-fluid pull-right" alt="">
               </div>
               <div class="col-sm-12">
-                <h3 class="text-brown text-custom3 font-weight-bold w-100 my-3">Tinggi Kandungan<br>Betacarotine</h5>
-                <p class="text-custom3">Membantu Melancarkan aliran darah dan meminimalisir rasa sakit saat premenstruasi.</p>
+                <h3 class="text-light-brown text-custom3 font-weight-bold w-100 my-3" style="position: absolute;text-align: center;">Tinggi Kandungan<br>Betacarotine</h5>
+                <p class="text-custom3" style="position: absolute;top: 95px;width: 250px;text-align: justify;left: 9px;">Membantu Melancarkan aliran darah dan meminimalisir rasa sakit saat premenstruasi.</p>
               </div>
             </div>
           </div>
@@ -206,8 +206,8 @@ Product
                 <img src="{{asset('images/arrow-right.png')}}" data-aos="fade-down-right" class="img-fluid" alt="">
               </div>
               <div class="col-sm-12">
-                <h3 class="text-brown font-weight-bold w-100 my-3 text-custom3 text-right">Tinggi Kandungan Lycopene</h5>
-                <p class="text-right text-custom3">Lycopene mengandung antioksidan yang melimpah untuk meningkatkan sistem kekebalan tubuh.</p>
+                <h3 class="text-light-brown font-weight-bold w-100 my-3 text-custom3" style="position: absolute;text-align: center;left: 78px;">Tinggi Kandungan Lycopene</h5>
+                <p class="text-custom3" style="position: absolute;top: 95px;width: 279px;left: 69px;text-align: justify;">Lycopene mengandung antioksidan yang melimpah untuk meningkatkan sistem kekebalan tubuh.</p>
               </div>
             </div>
           </div>
@@ -224,8 +224,8 @@ Product
           <div class="col-sm-12" data-aos="fade-up-left" data-aos-delay="3000">
             <div class="row d-flex justify-content-center">
               <div class="col-sm-4">
-                <h3 class="text-brown text-custom3 font-weight-bold w-100 my-3 text-right">Asam Amino</h5>
-                <p class="text-right text-custom3">Membentuk antibodi tubuh untuk menjaga tubuh dari zat asing yang masuk ke dalam tubuh.</p>
+                <h3 class="text-light-brown text-custom3 font-weight-bold w-100 my-3 text-center">Asam Amino</h5>
+                <p class="text-left text-custom3">Membentuk antibodi tubuh untuk menjaga tubuh dari zat asing yang masuk ke dalam tubuh.</p>
               </div>
               <div class="col-sm-3">
                 <img src="{{asset('images/arrow-up.png')}}" class="img-fluid mt-5" alt="">
@@ -239,8 +239,8 @@ Product
                 <img src="{{asset('images/arrow-left.png')}}" width="130" class="img-fluid pull-right" alt="">
               </div>
               <div class="col-sm-12">
-                <h3 class="text-brown text-custom3 font-weight-bold w-100 my-3">Vitamin B<br>Complex</h5>
-                <p class="text-custom3">Mengoptimalkan produksi energi dan mengoptimalkan penyerapan nutrisi.</p>
+                <h3 class="text-light-brown text-center text-custom3 font-weight-bold w-100 my-3">Vitamin B<br>Complex</h5>
+                <p class="text-custom3" style="position: absolute;width: 255px;left: -2px;">Mengoptimalkan produksi energi dan mengoptimalkan penyerapan nutrisi.</p>
               </div>
             </div>
           </div>
@@ -255,8 +255,8 @@ Product
                 <img src="{{asset('images/arrow-right.png')}}" class="img-fluid" alt="">
               </div>
               <div class="col-sm-12">
-                <h3 class="text-brown text-custom3 font-weight-bold w-100 my-3">Protein</h5>
-                <p class="text-right text-custom3">Berperan meningkatkan sistem imun dan membangun sel, serta jaringan dalam tubuh.</p>
+                <h3 class="text-light-brown text-custom3 font-weight-bold w-100 my-3 text-right">Protein</h5>
+                <p class="text-custom3" style="position: absolute;width: 249px;text-align: justify;left: 63px;">Berperan meningkatkan sistem imun dan membangun sel, serta jaringan dalam tubuh.</p>
               </div>
             </div>
           </div>

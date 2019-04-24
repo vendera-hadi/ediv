@@ -17,7 +17,7 @@ News and Event
 
     <div class="container-fluid news-bg">
       <div class="container mt-5">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center news-subtitle">
           <div class="col-sm-6">
             <h1 class="text-custom2 text-brown news-header-title">News</h1>
           </div>
@@ -28,6 +28,10 @@ News and Event
 
         <!-- NEWS -->
         <div class="row d-flex justify-content-between py-3">
+          <div class="col-sm-6 my-5 news-subtitle-mobile">
+            <h1 class="text-custom2 text-brown news-header-title text-center">News</h1>
+          </div>
+
           <div class="col-sm-6">
             <div class="row">
               <!-- news first -->
@@ -55,6 +59,10 @@ News and Event
 
           <!-- EVENT -->
           <div class="col-sm-6">
+            <div class="col-sm-6 my-5 news-subtitle-mobile">
+              <h1 class="text-custom2 text-center text-brown news-header-title">Event</h1>
+            </div>
+
             <div class="row">
               <!-- event first -->
               @foreach($events as $key => $post)

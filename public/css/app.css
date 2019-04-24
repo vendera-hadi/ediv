@@ -14027,9 +14027,10 @@ input[type=number]:focus,
 }
 
 .home-product-container {
-  background-image: url(/images/article-list-box-bg.png);
+  background-image: url(/images/article-list-box-bg2.png);
   background-size: cover;
   background-repeat: repeat-y;
+  background-position-y: -44px;
 }
 
 .home-jelly-right {
@@ -14266,6 +14267,14 @@ input[type=number]:focus,
 
 .news-header-title {
   font-size: 70px;
+}
+
+.news-subtitle {
+  display: block;
+}
+
+.news-subtitle-mobile {
+  display: none;
 }
 
 .company-box {
@@ -14800,6 +14809,14 @@ input[type=number]:focus,
 
   .home-slider-bg {
     min-height: 200px;
+  }
+
+  .news-subtitle {
+    display: none !important;
+  }
+
+  .news-subtitle-mobile {
+    display: block;
   }
 }
 
