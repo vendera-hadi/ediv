@@ -41,8 +41,55 @@ Home
 
     <section id="product-mobile" class="container-fluid p-0">
       <div class="row">
-        <div class="col-sm-12 text-center">
-          <img src="{{asset('images/home-mobile-1.jpg')}}" class="img-fluid w-100">
+        <div class="col-sm-12 text-center" style="height: 150px">
+          <img src="{{asset('images/ediva_pure.png')}}" alt="" class="img-fluid" style="position: absolute;top: 63px;left: 9px;width: 204px; z-index: 2">
+          <img src="{{asset('images/pink-brush.png')}}" alt="" class="img-fluid" style="position: absolute; top: 42px; left: -9px; width: 260px;">
+          <img src="{{asset('images/logo_ediva_pure.png')}}" width="100" class="img-responsive mb-5" style="position: absolute; top: 36px; right: 73px;">
+          <div class="text-custom3" style="position: absolute; top: 86px; right: 36px; width: 159px; font-size: 11px;">
+            Suplemen alami untuk membantu meringankan gejala pra-menstruasi.
+          </div>
+        </div>
+
+        <div class="col-sm-12 text-center" style="height: 200px">
+          <img src="{{asset('images/ediva_young.png')}}" alt="" class="img-fluid" style="position: absolute; top: 63px; right: 34px; width: 158px; z-index: 2;">
+          <img src="{{asset('images/blue-brush.png')}}" alt="" class="img-fluid" style="position: absolute; top: 35px; right: 19px; width: 207px;">
+          <img src="{{asset('images/logo_ediva_young.png')}}" width="100" class="img-responsive mb-5" style="position: absolute; top: 36px; left: 36px;">
+          <div class="text-custom3" style="position: absolute; top: 91px; left: 8px; width: 171px; font-size: 11px;">
+            Suplemen alami untuk membantu memelihara kesehatan kulit.
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3" style="background-color: #fff9eb">
+        <div class="col-sm-11">
+          <h1 class="text-brown text-center text-custom3 font-weight-bold" style="font-size: 14px;">Kebaikan alami untuk para wanita indonesia</h1>
+        </div>
+        <div class="col-sm-5 mt-1" style="font-size: 11px;width: 300px;margin: 0 auto;">
+          <p class="text-brown text-center text-custom3">Bahan alami yang terkandung dalam Ediva memiliki berbagai manfaat yang mampu menjaga dan merawat tubuh dari dalam</p>
+        </div>
+
+        <div class="col-sm-12">
+          <img src="{{asset('images/home-mobile-1.jpg')}}" class="img-fluid img-responsive">
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <div class="col-sm-12">
+          <img src="{{asset('images/pink-brush.png')}}" alt="" class="img-fluid" style="position: absolute; top: -25px; left: -37px; width: 260px;">
+          <img src="{{asset('images/blue-brush.png')}}" alt="" class="img-fluid" style="position: absolute; top: 180px; right: -28px; width: 260px;">
+        </div>
+        <div class="col-sm-12">
+          <h1 class="text-custom text-red text-brown text-center text-gray" style="font-size: 35px">Kenapa Ediva ?</h1>
+        </div>
+        <div class="col-sm-12">
+          <div class="w-50 pull-left p-3 text-center text-custom3" style="height: 240px; background-color: #ffebea; font-size: 11px; z-index: 2">
+            <img src="{{asset('images/logo_ediva_pure.png')}}" width="100" class="img-responsive img-fluid"><br><br>
+            Kandungan alami dalam setiap kapsul EDIVA Pure memberikan manfaat untuk membantu meringankan gejala pra-mentruasi, sehingga membebaskan kamu dari rasa khawatir saat datang bulan.
+          </div>
+          <div class="w-50 pull-left p-3 text-center text-custom3" style="height: 240px; background-color: #ecf9ff; font-size: 11px; z-index: 2">
+            <img src="{{asset('images/logo_ediva_young.png')}}" width="100" class="img-responsive img-fluid"><br><br>
+            Kandungan alami dalam setiap kapsul EDIVA Young memberikan manfaat untuk membantu memelihara kesehatan kulit, sehingga kulit menjadi lebih elastis dan sehat.
+          </div>
         </div>
       </div>
     </section>

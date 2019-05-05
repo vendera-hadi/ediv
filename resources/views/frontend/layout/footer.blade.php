@@ -41,14 +41,7 @@
           <img src="{{asset('images/facebook.png')}}" width="19" title="facebook ediva" alt="facebook ediva">
         </a>
       </li>
-      <li class="list-inline-item px-3 py-1">
-        @php
-          $cnt = App\Models\Content::where('key','footer.twitter')->first();
-        @endphp
-        <a href="{!! !empty($cnt->value) ? $cnt->value : "#" !!}" title="twitter ediva">
-          <img src="{{asset('images/twitter.png')}}" width="41" title="twitter ediva" alt="twitter ediva">
-        </a>
-      </li>
+      
     </ul>
   </div>
   <!-- newsletter -->

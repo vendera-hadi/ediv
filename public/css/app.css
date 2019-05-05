@@ -15002,5 +15002,9 @@ input[type=number]:focus,
   #why-ediva {
     display: none;
   }
+
+  .product-mobile {
+    width: 378px;
+  }
 }
 
