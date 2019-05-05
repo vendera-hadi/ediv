@@ -100,7 +100,7 @@ class ContentController extends Controller
           default:
             break;
         }
-        $data['posts'] = $posts->orderBy('id', 'desc')->paginate(2);
+        $data['posts'] = $posts->orderBy('id', 'desc')->paginate(10);
         if(!empty($request->page)) $title = $title." - Page ".$request->page;
         $data['title'] = $title;
         return view('frontend.article_list', $data);

@@ -7,6 +7,12 @@ Contact Us
 @section('content')
 <div id="app">
   <section id="contact" class="container-fluid">
+    <div class="row p-0 contact-title-mobile">
+      <div class="col-sm-12 p-0">
+        <img src="{{asset('images/hub-kami-mobile.jpg')}}" class="img-responsive w-100"/>
+      </div>
+    </div>
+
     <div class="row d-flex justify-content-center" style="background: white;">
       <div class="col-sm-10 contact-box">
         <!-- contact box -->
@@ -37,22 +43,22 @@ Contact Us
             <form action="{{route('docontact')}}" method="post">
               @csrf
               <div class="form-group">
-                <label for="contact-name" class="text-gray">Your Name</label>
-                <input type="text" name="name" class="form-control contact-textbox" id="contact-name" placeholder="Name" required>
+                <label for="contact-name" class="text-gray">Nama Anda</label>
+                <input type="text" name="name" class="form-control contact-textbox" id="contact-name" placeholder="Nama Anda" required>
               </div>
               <div class="form-group">
-                <label for="contact-phone" class="text-gray">Phone</label>
-                <input type="text" name="phone" class="form-control contact-textbox" id="contact-phone" placeholder="Phone" required>
+                <label for="contact-phone" class="text-gray">Nomor Telepon</label>
+                <input type="text" name="phone" class="form-control contact-textbox" id="contact-phone" placeholder="Nomor Telepon" required>
               </div>
               <div class="form-group">
-                <label for="contact-message" class="text-gray">Message</label>
-                <input type="text" name="message" class="form-control contact-textbox" id="contact-messsage" placeholder="Message" required>
+                <label for="contact-message" class="text-gray">Pesan</label>
+                <input type="text" name="message" class="form-control contact-textbox" id="contact-messsage" placeholder="Pesan" required>
               </div>
-              <button type="submit" class="btn btn-pink text-brown pull-right">Submit</button>
+              <button type="submit" class="btn btn-pink text-brown pull-right">Kirim</button>
             </form>
           </div>
           <div class="col-sm-4 bg-pink contact-box-shadow p-5">
-            <h1 class="text-custom text-brown">Hubungi Kami</h1>
+            <h1 class="text-custom text-brown contact-hub-kami">Hubungi Kami</h1>
             <p class="text-brown">
               {!! !empty($address->value) ? $address->value : "" !!}
             </p>

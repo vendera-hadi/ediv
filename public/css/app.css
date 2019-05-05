@@ -13758,6 +13758,10 @@ input[type=number]:focus,
   box-shadow: inset 0 -1px 0 #ddd;
 }
 
+.header-container {
+  margin-bottom: 3rem;
+}
+
 .fit-image {
   width: 100%;
   -o-object-fit: cover;
@@ -13770,6 +13774,13 @@ input[type=number]:focus,
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
+}
+
+.fit-image-small-mobile {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100px;
 }
 
 .text-brown {
@@ -13826,6 +13837,10 @@ input[type=number]:focus,
   color: #fff;
 }
 
+.btn-light-brown {
+  color: #c3af96;
+}
+
 .btn-pink {
   background-color: #fad9e2;
 }
@@ -13857,6 +13872,10 @@ input[type=number]:focus,
 
 .bg-white {
   background-color: #fff;
+}
+
+.contact-title-mobile {
+  display: none;
 }
 
 .contact-box-shadow {
@@ -14277,6 +14296,33 @@ input[type=number]:focus,
   display: none;
 }
 
+.news-mobile {
+  display: none;
+}
+
+.news-mobile-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 8px;
+  text-align: center;
+  width: 93%;
+  height: 38%;
+}
+
+.news-mobile-overlay-bg {
+  position: absolute;
+  width: 92%;
+  height: 38%;
+  bottom: 8px;
+  opacity: 0.8;
+  background: white;
+  margin: 0 auto;
+}
+
+.news-desktop {
+  display: block;
+}
+
 .company-box {
   background: #f8f3e9;
   min-height: 442px;
@@ -14326,9 +14372,14 @@ input[type=number]:focus,
 }
 
 #article-list {
+  display: block;
   margin-top: 8rem;
   margin-bottom: 8rem;
   position: relative;
+}
+
+#article-list-mobile {
+  display: none;
 }
 
 #article-list .article-list-container {
@@ -14349,6 +14400,16 @@ input[type=number]:focus,
   position: absolute;
   top: 0;
   margin: 0 auto;
+}
+
+#news {
+  background-position: inherit;
+  background-size: contain;
+}
+
+.news-subtitle-mobile {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .article-bg {
@@ -14690,6 +14751,16 @@ input[type=number]:focus,
 }
 
 @media (max-width: 575.98px) {
+  .header-container {
+    margin-bottom: 0;
+    background-color: #eee7d7;
+    border-bottom: 2px solid #bdb7af;
+  }
+
+  .header-container .navbar {
+    background-color: #eee7d7 !important;
+  }
+
   #sitemap {
     display: none !important;
   }
@@ -14817,6 +14888,119 @@ input[type=number]:focus,
 
   .news-subtitle-mobile {
     display: block;
+  }
+
+  .contact-box-shadow {
+    box-shadow: none;
+  }
+
+  .contact-product-img {
+    display: none;
+  }
+
+  .contact-hub-kami {
+    display: none;
+  }
+
+  .contact-box .row {
+    margin-bottom: 0 !important;
+  }
+
+  .contact-title-mobile {
+    display: block;
+  }
+
+  #news {
+    background-image: none;
+  }
+
+  #news .news-banner {
+    padding: 0;
+  }
+
+  .news-desktop {
+    display: none;
+  }
+
+  .news-mobile {
+    display: block;
+  }
+
+  .news-mobile-news {
+    background-color: #fff9eb;
+  }
+
+  .news-mobile-news a {
+    color: black;
+  }
+
+  .news-mobile-news .news-header-title {
+    font-size: 50px;
+  }
+
+  .news-mobile-event {
+    background-color: #fff;
+  }
+
+  .news-mobile-event a {
+    color: black;
+  }
+
+  .news-mobile-event .news-header-title {
+    font-size: 50px;
+  }
+
+  .news-subtitle-mobile {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-box {
+    margin-top: 0;
+  }
+
+  #article {
+    padding: 0 !important;
+  }
+
+  #article .container {
+    padding: 0 !important;
+  }
+
+  #article-list {
+    display: none;
+  }
+
+  #article-list-mobile {
+    display: block;
+  }
+
+  .article-detail-title-bg {
+    padding: 0 !important;
+  }
+
+  .article-detail-title-bg .jumbotron {
+    border-radius: 0;
+  }
+
+  #company {
+    padding: 0 !important;
+  }
+
+  #company .container {
+    padding: 0 !important;
+  }
+
+  #slider {
+    padding: 0 !important;
+  }
+
+  #slider .container {
+    padding: 0 !important;
+  }
+
+  #why-ediva {
+    display: none;
   }
 }
 

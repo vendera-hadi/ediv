@@ -1,4 +1,4 @@
-<div class="container mb-5">
+<div class="container header-container">
   <div class="row d-flex justify-content-center">
     <div class="col-sm-11">
       <nav class="navbar navbar-expand-md navbar-light bg-light">

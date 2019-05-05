@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid article-detail-title-bg">
   <div class="jumbotron bg-brown text-center">
     <h1 class="text-custom3 font-weight-bold">{{$post->title}}</h1>
   </div>

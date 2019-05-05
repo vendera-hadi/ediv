@@ -39,22 +39,10 @@ Home
       </div>
     </section>
 
-    <section id="product-mobile" class="container my-5 home-product-container">
+    <section id="product-mobile" class="container-fluid p-0">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <img src="{{asset('images/logo_ediva_pure.png')}}" width="200" class="img-responsive mb-3">
-          <!-- <h1 class="text-light-gray text-custom my-3">Ediva Pure</h1> -->
-          <img src="{{asset('images/ediva_pure.png')}}" class="img-fluid my-3" alt="">
-          <p class="text-gray my-3 text-custom3">Suplemen alami untuk membantu meringankan gejala pra-menstruasi.</p>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-sm-12 text-center">
-          <img src="{{asset('images/logo_ediva_young.png')}}" width="200" class="img-responsive mb-3">
-          <!-- <h1 class="text-light-gray text-custom my-3">Ediva Young</h1> -->
-          <img src="{{asset('images/ediva_young2.png')}}" class="img-fluid my-3" alt="">
-          <p class="text-gray my-3 text-custom3">Suplemen alami untuk membantu memelihara kesehatan kulit.</p>
+          <img src="{{asset('images/home-mobile-1.jpg')}}" class="img-fluid w-100">
         </div>
       </div>
     </section>
@@ -71,7 +59,7 @@ Home
 
       <div class="row d-flex justify-content-center title-group-1">
         <div class="col-sm-6">
-          <h1 class="text-red text-custom text-right" style="padding-right: 80px"><span>Gac Fruit</span></h1>
+          <h1 class="text-red text-custom text-right" style="padding-right: 80px"><span>Buah Gac</span></h1>
         </div>
         <div class="col-sm-6">
           <h1 class="text-orange text-custom"><span>Royal Jelly</span></h1>
@@ -80,12 +68,12 @@ Home
 
       <div class="row d-flex justify-content-center" style="margin-top: 300px">
         <div class="col-sm-6">
-          <h2 class="text-light-brown text-custom text-right px-5">Evening<br>Primrose<br>Oil</h1>
+          <h2 class="text-light-brown text-custom text-right px-5">Minyak<br>Evening<br>Primrose</h1>
           <img src="{{asset('images/primrose.png')}}" width="350" class="img-fluid primrose-left" alt="" data-aos="fade-down">
           <img src="{{asset('images/vit-e.png')}}" width="150" class="img-fluid vit-e-left" alt="" data-aos="fade-down">
         </div>
         <div class="col-sm-6">
-          <h2 class="text-light-brown text-custom text-left px-5">Evening<br>Primrose<br>Oil</h1>
+          <h2 class="text-light-brown text-custom text-left px-5">Minyak<br>Evening<br>Primrose</h1>
           <center><img src="{{asset('images/primrose2.png')}}" width="350" class="img-fluid primrose-right" alt="" data-aos="fade-down"></center>
           <br>
           <center><img src="{{asset('images/vit-e.png')}}" width="150" class="img-fluid vit-e-right" alt="" data-aos="fade-down"></center>
@@ -114,7 +102,7 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush3" style="font-size: medium; padding: 29px 77px;">Vitamin B Complex</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush3" style="font-size: medium; padding: 29px 77px;">Vitamin B Kompleks</h5>
           </div>
         </div>
       </div>
@@ -165,7 +153,7 @@ Home
             <img src="{{asset('images/arrow-left.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush5" style="padding: 17px 44px;">Omega 6 Fatty Acid</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush5" style="padding: 17px 44px;">Asam Lemak Omega 6</h5>
           </div>
         </div>
       </div>
@@ -176,75 +164,11 @@ Home
             <img src="{{asset('images/arrow-right.png')}}" width="110" class="img-fluid" alt="">
           </div>
           <div class="col-sm-12">
-            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush5" style="padding: 19px 43px;">Asam Gamma-linolenic</h5>
+            <h5 class="text-brown text-custom3 font-weight-bold w-100 my-3 brush5" style="padding: 19px 43px;">Asam gamma-linolenat</h5>
           </div>
         </div>
       </div>
 
-    </section>
-
-    <section id="animate-desc-mobile" class="container-fluid py-5 my-5">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1 class="text-custom text-red text-center news-header-title my-3">Evening Primroses Oil</h1>
-          <img src="{{asset('images/primroses.png')}}" class="img-fluid my-3" width="580" alt="primroses">
-        </div>
-        <div class="col-sm-12 text-center">
-          <h3 class="text-brown text-custom3 font-weight-bold my-3">Omega 6 Fatty Acid</h5>
-          <p class="text-custom3">Bermanfaat untuk memaksimalkan proses metabolisme dan membantu mengoptimalkan proses regenerasi kulit dari dalam tubuh</p>
-        </div>
-        <div class="col-sm-12 text-center">
-          <h3 class="text-brown text-custom3 font-weight-bold my-3">Asam Gamma-linolenic</h5>
-          <p class="text-custom3">Berperan penting mengatasi masalah radang/inflamasi, terutama pada penyakit kulit</p>
-        </div>
-      </div>
-
-      <div class="row my-5">
-        <div class="col-sm-12">
-          <h1 class="text-custom text-red text-center news-header-title my-3">VIT - E</h1>
-          <center><img src="{{asset('images/vit-e.png')}}" class="img-fluid my-3" alt="primroses" width="220"></center>
-        </div>
-        <div class="col-sm-12 text-center">
-          <p class="my-3 text-custom3">Mendorong produksi kolagen yang berfungsi mengurangi jumlah garis halus dan tanda-tanda penuaan.</p>
-        </div>
-        <div class="col-sm-12 text-center">
-          <p class="my-3 text-custom3">Melancarkan sirkulasi darah dan menurunkan indikasi terjadinya sindrom pramenstruasi.</p>
-        </div>
-      </div>
-
-      <div class="row my-5">
-        <div class="col-sm-12">
-          <h1 class="text-custom text-red text-center news-header-title my-3">GAC Fruit</h1>
-          <img src="{{asset('images/gac-fruit-2.png')}}" class="img-fluid" width="580" alt="primroses">
-        </div>
-        <div class="col-sm-12 text-center">
-          <h3 class="text-brown text-custom3 font-weight-bold my-3">Tinggi Kandungan Betacarotine</h5>
-          <p class="text-custom3">Membantu Melancarkan aliran darah dan meminimalisir rasa sakit saat premenstruasi.</p>
-        </div>
-        <div class="col-sm-12 text-center">
-          <h3 class="text-brown text-custom3 font-weight-bold my-3">Tinggi Kandungan Lycopene</h5>
-          <p class="text-custom3">Lycopene mengandung antioksidan yang melimpah untuk meningkatkan sistem kekebalan tubuh.</p>
-        </div>
-      </div>
-
-      <div class="row my-5">
-        <div class="col-sm-12">
-          <h1 class="text-custom text-red text-center news-header-title my-3">Royal Jelly</h1>
-          <img src="{{asset('images/royal-jelly.png')}}" class="img-fluid" width="580" alt="primroses">
-        </div>
-        <div class="col-sm-12 text-center">
-          <h3 class="text-brown text-custom3 font-weight-bold my-3">Asam Amino</h5>
-          <p class="text-custom3">Membentuk antibodi tubuh untuk menjaga tubuh dari zat asing yang masuk ke dalam tubuh.</p>
-        </div>
-        <div class="col-sm-12 text-center">
-          <h3 class="text-brown text-custom3 font-weight-bold my-3">Vitamin B Complex</h5>
-          <p class="text-custom3">Mengoptimalkan produksi energi dan mengoptimalkan penyerapan nutrisi.</p>
-        </div>
-        <div class="col-sm-12 text-center">
-          <h3 class="text-brown text-custom3 font-weight-bold my-3">Protein</h5>
-          <p class="text-custom3">Berperan meningkatkan sistem imun dan membangun sel, serta jaringan dalam tubuh.</p>
-        </div>
-      </div>
     </section>
 
     <section id="why-ediva" class="container-fluid py-5 my-5">
