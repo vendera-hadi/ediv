@@ -69,7 +69,7 @@ Home
         </div>
 
         <div class="col-sm-12">
-          <img src="{{asset('images/home-mobile-1.jpg')}}" class="img-fluid img-responsive">
+          <img src="{{asset('images/home-mobile-1.jpg')}}" class="img-fluid img-responsive w-100">
         </div>
       </div>
 
