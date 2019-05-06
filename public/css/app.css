@@ -14357,6 +14357,10 @@ input[type=number]:focus,
   right: 0;
 }
 
+.company-mobile {
+  display: none;
+}
+
 #company .VueCarousel-navigation-prev {
   left: 47px;
   font-size: xx-large;
@@ -15005,6 +15009,14 @@ input[type=number]:focus,
 
   .product-mobile {
     width: 378px;
+  }
+
+  .company-desktop {
+    display: none;
+  }
+
+  .company-mobile {
+    display: block;
   }
 }
 

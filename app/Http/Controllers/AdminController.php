@@ -10,6 +10,7 @@ use App\Models\ContactLog;
 use App\Models\Faq;
 use App\Models\Content;
 use App\Exports\NewsletterExport;
+use App\Exports\ContactLogExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Auth;
 
@@ -82,6 +83,11 @@ class AdminController extends Controller
     public function newsletter_download()
     {
         return Excel::download(new NewsletterExport, 'data.xlsx');
+    }
+
+    public function contactlog_download()
+    {
+        return Excel::download(new ContactLogExport, 'data.xlsx');
     }
 
     public function news()
@@ -235,7 +241,7 @@ class AdminController extends Controller
     public function content()
     {
         $data['contents'] = Content::all();
-        $data['textarea_filter'] = ['company.description', 'contact.address'];
+        $data['textarea_filter'] = ['company.description', 'company.description2', 'contact.address'];
         return view('backend.content_form', $data);
     }
 

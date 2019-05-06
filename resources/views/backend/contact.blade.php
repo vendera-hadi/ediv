@@ -5,6 +5,7 @@ Contact Log
 @endsection
 
 @section('content')
+<a href="{{route('admin.contactlog.download')}}" class="btn btn-primary pull-right my-3"> Download List</a>
 <table class="table">
   <thead class="thead-dark">
     <tr>

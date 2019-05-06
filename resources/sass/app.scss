@@ -681,6 +681,10 @@ input[type=number]:focus,
     right: 0;
   }
 
+  &-mobile {
+    display: none;
+  }
+
 }
 
 #company {
@@ -1256,5 +1260,17 @@ input[type=number]:focus,
 
   #why-ediva {
     display: none;
+  }
+
+  .product-mobile {
+    width: 378px;
+  }
+
+  .company-desktop {
+    display: none;
+  }
+
+  .company-mobile {
+    display: block;
   }
 }

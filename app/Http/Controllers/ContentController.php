@@ -49,7 +49,7 @@ class ContentController extends Controller
 
         // send mail
         try{
-          \Mail::to('admin@awble.com')->send(new ContactMail($data));
+          \Mail::to('edivaseries@meiji.co.id')->send(new ContactMail($data));
           return redirect()->back()->with('success', "Your message was sent to Our team, we will respond the message as soon as possible");
         } catch (\Exception $e) {
           return redirect()->back()->with('error', "Failed to send message");
@@ -67,6 +67,8 @@ class ContentController extends Controller
       $data['sliders'] = Slider::company()->get();
       $data['title'] = Content::where('key','company.title')->first();
       $data['description'] = Content::where('key','company.description')->first();
+      $data['title2'] = Content::where('key','company.title2')->first();
+      $data['description2'] = Content::where('key','company.description2')->first();
       return view('frontend.company', $data);
     }
 

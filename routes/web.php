@@ -47,6 +47,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
   Route::post('/setting', 'AdminController@setting_update')->name('setting.update');
 
   Route::get('/contactlog', 'AdminController@contactlog')->name('contactlog');
+  Route::get('/contactlog/download', 'AdminController@contactlog_download')->name('contactlog.download');
 
   Route::get('/faq', 'AdminController@faq')->name('faq.index');
   Route::post('/faq', 'AdminController@faq_create')->name('faq.create');

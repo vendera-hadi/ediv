@@ -49046,6 +49046,20 @@ var app = new Vue({
     aos__WEBPACK_IMPORTED_MODULE_0___default.a.init({
       duration: 2000
     });
+  },
+  methods: {
+    companyShowMore: function companyShowMore(event) {
+      $('.company-short-desc').css('display', 'none');
+      $('.company-long-desc').css('display', 'block');
+      $('.btn-show-more').addClass('d-none');
+      $('.btn-show-less').removeClass('d-none');
+    },
+    companyShowLess: function companyShowLess(event) {
+      $('.company-short-desc').css('display', 'block');
+      $('.company-long-desc').css('display', 'none');
+      $('.btn-show-more').removeClass('d-none');
+      $('.btn-show-less').addClass('d-none');
+    }
   }
 });
 
