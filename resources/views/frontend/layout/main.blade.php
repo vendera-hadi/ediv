@@ -13,10 +13,12 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+    <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/gif" sizes="32x32">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <meta name="robots" content="index, follow">
     @yield('head')
 </head>
 <body>
