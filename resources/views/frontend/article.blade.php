@@ -37,6 +37,12 @@ Articles
             </div>
             @endforeach
             <!-- end news -->
+            <div class="col-sm-12 mt-3">
+              <center>
+                <a href="{{route('article_list', ['type' => 'article'])}}" class="btn btn-brown text-custom3 text-white font-weight-bold btn-rounded
+                   px-3 py-2">Baca Semua Artikel</a>
+              </center>
+            </div>
           </div>
         </div>
       </div>
@@ -75,7 +81,7 @@ Articles
       @endforeach
       <div class="col-sm-12 pt-3 pb-5 news-mobile-news">
         <center>
-          <a href="{{route('article_list', ['type' => 'article'])}}" class="btn btn-brown btn-rounded font-weight-bold text-white text-custom3 font-weight-bold">Baca Lainnya</a>
+          <a href="{{route('article_list', ['type' => 'article'])}}" class="btn btn-brown btn-rounded font-weight-bold text-white text-custom3 font-weight-bold">Baca Semua Artikel</a>
         </center>
       </div>
     </div>

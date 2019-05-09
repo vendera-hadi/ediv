@@ -11,7 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/gif" sizes="32x32"> 
+    <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/gif" sizes="32x32">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -39,13 +39,13 @@
                         <a class="nav-link" href="{{route('admin.home')}}">Slider</a>
                       </li>
                       <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.news' ? 'font-weight-bold' : ''}}">
-                        <a class="nav-link" href="{{route('admin.news')}}">News</a>
+                        <a class="nav-link" href="{{route('admin.news')}}">Berita</a>
                       </li>
                       <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.event' ? 'font-weight-bold' : ''}}">
-                        <a class="nav-link" href="{{route('admin.event')}}">Event</a>
+                        <a class="nav-link" href="{{route('admin.event')}}">Acara</a>
                       </li>
                       <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.article' ? 'font-weight-bold' : ''}}">
-                        <a class="nav-link" href="{{route('admin.article')}}">Article</a>
+                        <a class="nav-link" href="{{route('admin.article')}}">Artikel</a>
                       </li>
                       <li class="px-2 nav-item {{Route::currentRouteName() == 'admin.newsletter' ? 'font-weight-bold' : ''}}">
                         <a class="nav-link" href="{{route('admin.newsletter')}}">Newsletter</a>
