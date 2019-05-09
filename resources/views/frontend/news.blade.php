@@ -34,14 +34,14 @@ News and Event
               <!-- news first -->
               @foreach($news as $key => $post)
               <div class="{{ $key == 0 ? 'col-sm-12' : 'col-sm-6 my-3'}}">
-                <div class="card">
+                <div class="card" style="min-height: 520px">
                   <a href="{{route('article_detail', ['slug' => $post->slug])}}" title="{{$post->title}}">
                     <img class="card-img-top img-fluid {{ $key == 0 ? 'fit-image' : 'fit-image-small'}}" src="{{asset($post->image)}}" alt="{{ $post->title }}">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title text-custom3 font-weight-bold">{{ $post->title }}</h5>
                     <p class="card-text text-custom3">{{Str::limit(strip_tags($post->description), 100)}}</p>
-                    <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-blue text-white font-weight-bold btn-rounded pull-right px-3 py-2 text-custom3 font-weight-bold">Baca Lainnya</a>
+                    <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-blue text-white font-weight-bold btn-rounded pull-right px-3 py-2 text-custom3 font-weight-bold" style="position: absolute;right: 10px;bottom: 14px;">Baca Lainnya</a>
                   </div>
                 </div>
               </div>
@@ -61,14 +61,14 @@ News and Event
               <!-- event first -->
               @foreach($events as $key => $post)
               <div class="{{ $key == 0 ? 'col-sm-12' : 'col-sm-6 my-3'}}">
-                <div class="card">
+                <div class="card" style="min-height: 520px">
                   <a href="{{route('article_detail', ['slug' => $post->slug])}}" title="{{$post->title}}">
                     <img class="card-img-top img-fluid {{ $key == 0 ? 'fit-image' : 'fit-image-small'}}" src="{{asset($post->image)}}" alt="{{ $post->title }}">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title text-custom3 font-weight-bold">{{ $post->title }}</h5>
                     <p class="card-text text-custom3">{{Str::limit(strip_tags($post->description), 100)}}</p>
-                    <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-pink text-white font-weight-bold btn-rounded pull-right px-3 py-2 text-custom3 font-weight-bold">Baca Lainnya</a>
+                    <a href="{{route('article_detail', ['slug' => $post->slug])}}" class="btn btn-pink text-white font-weight-bold btn-rounded pull-right px-3 py-2 text-custom3 font-weight-bold" style="position: absolute;right: 10px;bottom: 14px;">Baca Lainnya</a>
                   </div>
                 </div>
               </div>
